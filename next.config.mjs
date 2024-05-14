@@ -4,14 +4,14 @@ const nextConfig = {
   //   dataset: "production",
   //   projectId: "u32a81ip",
   // },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-      },
-    ],
-  },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "https",
+  //       hostname: "cdn.sanity.io",
+  //     },
+  //   ],
+  // },
   experimental: {
     taint: true,
   },
