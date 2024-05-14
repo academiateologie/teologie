@@ -1,0 +1,72 @@
+.gallery {
+    @apply w-full h-full bg-[url('../../../public/static/gallery/gallery-bg.png')] bg-cover bg-center;
+}
+.container {
+    @apply w-[1200rem] mx-auto;
+
+    @media screen and (max-width: 600px) {
+        @apply w-full;
+    }
+}
+.gallery__wrapper {
+    @apply pt-[70rem] pb-[98rem] grid grid-cols-2 ;
+
+    @media screen and (max-width: 600px) {
+        @apply hidden;
+    }
+}
+.gallery__foto {
+}
+.foto__top, 
+.video__top {
+    @apply flex gap-[100rem] justify-center;
+}
+.foto__title,
+.video__title {
+    @apply text-[#66220F] text-[40rem] font-normal leading-[48rem] uppercase;
+
+     @media screen and (max-width: 600px) {
+        @apply text-[25rem];        
+    }
+}
+.foto__view_button,
+.video__view_button {
+    @apply text-[17rem] text-[#66220F] leading-none flex justify-center items-center border-[1rem] border-[#66220F] w-[142rem] h-[50rem] mt-[-10rem] uppercase;
+
+    @media screen and (max-width: 600px) {
+        @apply hidden;        
+    }
+}
+.video__view_button__mob {
+    @apply hidden;        
+
+    @media screen and (max-width: 600px) {
+           @apply text-[22rem] text-[#66220F] font-semibold leading-none flex justify-center items-center border-[2rem] border-[#66220F] w-[94%] h-[60rem] mt-[-30rem] mb-[40rem] mx-auto uppercase;
+    }
+}
+.foto__inner {
+}
+.foto__item {
+}
+.gallery__video {
+}
+.video__top {
+}
+.foto__inner,
+.video__inner {
+    @apply flex gap-[26rem] mt-[22rem] relative z-0;
+}
+.video__item {
+    @apply  w-[276rem] h-[220rem];
+}
+.video__plyer_button {
+    @apply w-[54rem] h-[54rem] bg-[#f0f0f0] rounded-full absolute top-[50%] left-[75%] -translate-x-[75%] -translate-y-[50%] z-[1];
+}
+// ===== .gallery mobile ======>
+.gallery__mobile {
+    @apply hidden;
+
+    @media screen and (max-width: 600px) {
+        @apply block relative;
+    }
+}

@@ -1,0 +1,36 @@
+.publications__posts {
+    @apply hidden;
+
+    @media screen and (max-width: 600px) {
+     @apply block w-full;   
+    }
+}
+.posts__gallery {
+    @apply w-full flex gap-[45rem];
+}
+.publications__post__item {
+    @apply flex flex-col gap-[20rem] w-full h-full bg-white relative top-0 left-0 z-0;
+}
+.post__image {
+    @apply relative z-0;
+}
+
+
+// ===== gallery navigate =====>
+
+
+.navigate__counter {
+    @apply flex justify-center items-center absolute z-[3] top-[101%] -translate-y-[101%] left-[240rem];
+
+    @media screen and (max-width: 600px) {
+      @apply left-[180rem] top-[97%] -translate-y-[97%] flex-col;
+     }
+}
+
+.counter__all_items {
+    @apply text-[#CF4A47] text-[14rem] font-bold;
+}
+
+.counter__current_item {
+    @apply text-[#515151] text-[14rem] font-bold;
+}

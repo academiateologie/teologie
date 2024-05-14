@@ -1,0 +1,7 @@
+.fb__icon {
+    @apply w-[17rem] h-[31rem] absolute top-[24rem] right-0 z-[1];
+
+    @media screen and (max-width: 600px) {
+        @apply relative top-0 left-0 mt-[-20rem] w-[26rem] h-[47rem];
+    }
+}

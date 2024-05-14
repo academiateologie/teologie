@@ -1,0 +1,48 @@
+.about {
+    @apply w-full;
+    background: rgba(206, 19, 36, 0.1);
+    font-family: 'Myriad Pro';
+}
+.about__wrapper {
+    @apply flex justify-center gap-[90rem];
+
+    @media screen and (max-width: 600px) {
+        @apply flex flex-col gap-0 px-[20rem] pb-[20rem];
+    }
+}
+.about__image {
+    @apply w-[603rem] h-[640rem] relative bg-[url('../../../public/static/about/about-img.png')] bg-cover bg-center bg-no-repeat;
+
+    @media screen and (max-width: 600px) {
+        @apply w-0 h-0;
+    }
+
+}
+.about__description {
+    @apply w-[630rem] pt-[90rem];
+
+    @media screen and (max-width: 600px) {
+        @apply w-full pt-[20rem];
+    }
+}
+.about__title {
+    @apply text-[#66220F] text-[40rem] leading-none font-semibold uppercase;
+
+    @media screen and (max-width: 600px) {
+        @apply text-[25rem] font-normal text-center;
+    }
+}
+.about__text {
+    @apply w-[628rem] text-[18rem] text-[#272B37] font-normal leading-[25rem] mt-[30rem];
+
+    @media screen and (max-width: 600px) {
+        @apply w-full text-[16rem];
+    }
+}
+.about__button {
+    @apply w-[212rem] text-[17rem] text-[#66220F] font-semibold leading-none py-[16rem] uppercase flex justify-center mt-[40rem] border-[1px] border-[#66220F] hover:bg-white/50 transition-all duration-200;
+
+    @media screen and (max-width: 600px) {
+        @apply bg-[#66220F] text-white font-normal w-[90vw];
+    }
+}
