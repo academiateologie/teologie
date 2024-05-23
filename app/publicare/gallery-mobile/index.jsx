@@ -22,7 +22,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Link from 'next/link';
 
-const Index = () => {
+const Index = ({item}) => {
     const [isHover, setIsHover] = React.useState(false);
     const [onButton, setOnButton] = React.useState(null);
     const [isSlideActive, setIsSlideActive] = React.useState(0)

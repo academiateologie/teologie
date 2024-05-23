@@ -1,8 +1,8 @@
-// "use client"
+"use client"
 import React from 'react'
 import styles from "./desktop.public.module.scss"
 import { motion } from 'framer-motion';
-
+import { posts } from "../../../db";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Navigation,
@@ -20,7 +20,7 @@ import "swiper/css/pagination";
 import "swiper/css/grid";
 import Link from 'next/link';
 
-const Index = ({posts}) => {
+const Index = () => {
     const [isHover, setIsHover] = React.useState(false);
     const [onButton, setOnButton] = React.useState(null);
 
@@ -41,7 +41,7 @@ const Index = ({posts}) => {
             rows: 3,
             columns: 3,
           }}
-          spaceBetween={80}
+          spaceBetween={20}
           centeredSlides={false}
           grabCursor={true}
           keyboard={{
@@ -65,10 +65,8 @@ const Index = ({posts}) => {
           className="mt-0 w-full tablet:mt-[40rem] h-[1460rem] pb-[40rem] relative bg-transparent"
         >
           {posts.map((post) => (
-            <>
               <SwiperSlide key={post.id}>
                 <motion.div
-                  onClick={() => console.log(post.title)}
                   onHoverStart={() => {
                     setIsHover(true);
                     setOnButton(post.id);
@@ -87,47 +85,20 @@ const Index = ({posts}) => {
                       </Link>
                     )}
                     <img
-                      src={post.post__img}
+                      src={post.post_img}
                       className="w-full h-[256rem]"
-                      alt={post.slug}
+                      alt={post.text_title}
                     ></img>
                     <div className={styles.post__description}>
-                      <span className={styles.post__slug}>{post.slug}</span>
-                      <p className={styles.post__text}>{post.description}</p>
+                      <span className={styles.post__slug}>{post.slug_text}</span>
+                      <p className={styles.post__text}>{post.text_subtitle}</p>
                       <p className={styles.post__date_created}>
-                        {post.date__created}
+                        {post.date_created}
                       </p>
                     </div>
                   </div>
                 </motion.div>
               </SwiperSlide>
-              {/* <SwiperSlide key={post.description}>
-                <a
-                  href={`/${post.slug}`}
-                  onClick={() => console.log(post.slug)}
-                >
-                  <div className={styles.publications__post__item}>
-                    {isHover && onButton === post.id && (
-                      <button type="button" className={styles.on__hover_button}>
-                        mai mult
-                      </button>
-                    )}
-                    <img
-                      src={post.image}
-                      className="w-full h-[256rem]"
-                      alt={post.textSlug}
-                    ></img>
-                    <div className={styles.post__description}>
-                      <span className={styles.post__slug}>{post.textSlug}</span>
-                      <p className={styles.post__text}>{post.description}</p>
-                      <p className={styles.post__date_created}>
-                        {post.publishedDate}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </SwiperSlide> */}
-            </>
           ))}
           {/* <div className={styles.navigate__counter}>
             <p className={styles.counter__all_items}>0{posts.length} /</p>
@@ -140,3 +111,32 @@ const Index = ({posts}) => {
 }
 
 export default Index
+
+ {
+   /* <SwiperSlide key={post.description}>
+                <a
+                  href={`/${post.id}`}
+                  onClick={() => console.log(post.id)}
+                >
+                  <div className={styles.publications__post__item}>
+                    {isHover && onButton === post.id && (
+                      <button type="button" className={styles.on__hover_button}>
+                        mai mult
+                      </button>
+                    )}
+                    <img
+                      src={post.post_img}
+                      className="w-full h-[256rem]"
+                      alt={post.textSlug}
+                    ></img>
+                    <div className={styles.post__description}>
+                      <span className={styles.post__slug}>{post.textSlug}</span>
+                      <p className={styles.post__text}>{post.description}</p>
+                      <p className={styles.post__date_created}>
+                        {post.publishedDate}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </SwiperSlide> */
+ }

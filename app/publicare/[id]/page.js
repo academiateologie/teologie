@@ -1,22 +1,23 @@
 // "use client"
 import styles from "./post.module.scss";
-import { posts } from "../../db";
 import Header from "../../components/header-about";
 import Footer from "../../components/footer";
-import GalleryMob from "../gallery-mobile"
+import GalleryMob from "../gallery-mobile";
+import { posts } from "../../db";
 
-export async function getPosts() {
-  // const postBody = await posts;
-  // const post = posts.filter((p) => title !== p.title);
-  return posts.map((post) => ({
-    id: post.id,
+export async function generateStaticParams() {
+  return posts.map((item) => ({
+    id: item.id,
   }));
 }
 
-export default async function Post({ params }) {
-  // const postBody = await getPosts(params.id);
-  // console.log("getPosts ", postBody);
-  const { id, title, description } = params;
+export default async function PostPage({ params }) {
+  const item = posts.find((item) => item.id === params.id);
+
+  if (!item) {
+    return <div>Item not found</div>;
+  }
+
   return (
     <>
       <Header />
@@ -24,7 +25,7 @@ export default async function Post({ params }) {
         <div className={styles.post__container}>
           <div className={styles.post__img}>
             <img
-              src="/static/gallery/gallery-foto-2.png"
+              src={item.post_img}
               className="w-full h-full"
               alt="post view"
             />
@@ -44,7 +45,7 @@ export default async function Post({ params }) {
                   />
                 </svg>
               </button>
-              <p className={styles.post__navigate_date}>29 NOI 2023</p>
+              <p className={styles.post__navigate_date}>{item.date_created}</p>
               <button type="button" className={styles.post__navigate_next}>
                 <svg
                   className="w-[7rem] h-[12rem] tablet:w-[7rem] tablet:h-[12rem]"
@@ -61,53 +62,29 @@ export default async function Post({ params }) {
             </div>
             <p className={styles.post__slug}>ORTODOXIE</p>
           </div>
-          <h4 className={styles.post__title}>
-            Pelerinaj la mănăstirea cu hramul „Sfintele femei Mironosiţe <br className="block tablet:hidden"/>Marta
-            și Maria”
-          </h4>
-          <p className={styles.post__description_bold}>
-            În data de 12 octombrie, cu binecuvântarea Înalt Prea Sfinţitului
-            Vladimir, Mitropolitul Chişinăului şi al Întregii Moldove, Rector al
-            Academiei de Teologie Ortodoxă din Moldova, elevii Seminarului de
-            Teologie Ortodoxă „Sf. Irh. Gavriil” din Chișinău, au avut ocazia să
-            savureze clipe de neuitat vizitând mănăstirea cu hramul „Sfintele
-            femei Mironosiţe Marta și Maria”, din localitatea Hagimus, raionul
-            Căuşeni.
-          </p>
-          <p className={styles.post__description}>
-            După obişnuitele rugăciuni de dimineaţă, elevii celor trei clase
-            împreună cu diriginții lor s-au deplasat spre așezământul monahal.
-            Aici elevii au ascultat istoria mânăstirii de la înfiinţare şi până
-            în prezent.
-          </p>
-          <p className={styles.post__description}>
-            De asemenea, elevii au vizitat filiala liceului teoretic „Grigore
-            Grigoriu”, profil în arte, care este o continuare a activității
-            Școlii de Regenție din cadrul mănăstirii în perioada anilor 1998
-            -2008. Liceul oferă cunoștințe integrale în domeniul musical –
-            artistic pentru absolventele gimnaziilor din întreaga Republică.
-          </p>
-          <p className={styles.post__description}>
-            De asemenea, elevii au vizitat filiala liceului teoretic „Grigore
-            Grigoriu”, profil în arte, care este o continuare a activității
-            Școlii de Regenție din cadrul mănăstirii în perioada anilor 1998
-            -2008. Liceul oferă cunoștințe integrale în domeniul musical –
-            artistic pentru absolventele gimnaziilor din întreaga Republică.
-            Elevii seminarului s-au întors plini de impresii, uimiţi de curăţia
-            vieţii dedicate, considerînd activitatea de faţă ca o lecţie
-            practică de trăire şi lucrare în Hristos.
-          </p>
-          <p className={styles.post__description}>
-            Elevii seminarului s-au întors plini de impresii, uimiţi de curăţia
-            vieţii dedicate, considerînd activitatea de faţă ca o lecţie
-            practică de trăire şi lucrare în Hristos.
-          </p>
+          <h4 className={styles.post__title}>{item.text_title}</h4>
+          <p className={styles.post__description_bold}>{item.text_subtitle}</p>
+          <div>
+            {item.description_text.map((p, idx) => (
+              <p className={styles.post__description} key={idx}>
+                {p}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
       <div className={styles.post__gallery}>
         <div className={styles.post__container}>
           <div className={styles.post__gallery_inner}>
-            <img
+            {item.post_img_collection.map((pi, idx) => (
+              <img
+              key={idx}
+                src={pi}
+                className="w-[280rem] h-[222rem]"
+                alt="post view"
+              />
+            ))}
+            {/* <img
               src="/static/gallery/gallery-foto-2.png"
               className="w-[280rem] h-[222rem]"
               alt="post view"
@@ -146,9 +123,9 @@ export default async function Post({ params }) {
               src="/static/gallery/gallery-foto-2.png"
               className="w-[280rem] h-[222rem]"
               alt="post view"
-            />
+            /> */}
           </div>
-          <GalleryMob />
+          <GalleryMob item={item} />
         </div>
       </div>
       <Footer />
