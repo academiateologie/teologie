@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Link from 'next/link';
 import styles from "./gallery.module.scss"
 import Image from 'next/image';
 import SliderMobile from "./foto-gallery/SliderMobile";
@@ -12,14 +13,13 @@ const Index = () => {
         <div className={styles.gallery__wrapper}>
           <div className={styles.gallery__foto}>
             <div className={styles.foto__top}>
-              <h6 className={styles.foto__title}>
-                galerie
-                <br />
-                foto
-              </h6>
-              <button type="button" className={styles.foto__view_button}>
+              <h6 className={styles.foto__title}>galerie foto</h6>
+              <Link
+                href={"/galerie-foto"}
+                className={styles.foto__view_button}
+              >
                 Vezi toate
-              </button>
+              </Link>
             </div>
             <div className={styles.foto__inner}>
               <img
@@ -40,11 +40,7 @@ const Index = () => {
 
           <div className={styles.gallery__video}>
             <div className={styles.video__top}>
-              <h6 className={styles.video__title}>
-                galerie
-                <br />
-                video
-              </h6>
+              <h6 className={styles.video__title}>galerie video</h6>
               <button type="button" className={styles.video__view_button}>
                 Vezi toate
               </button>
@@ -119,25 +115,20 @@ const Index = () => {
 
         <div className={styles.gallery__mobile}>
           <div className={styles.foto__top}>
-            <h6 className={styles.foto__title}>
-              galerie
-              <br />
-              foto
-            </h6>
-            <button type="button" className={styles.foto__view_button}>
+            <h6 className={styles.foto__title}>galerie foto</h6>
+            <Link href={"/galerie-foto"} className={styles.foto__view_button}>
               Vezi toate
-            </button>
+            </Link>
           </div>
           <SliderMobile />
-          <button type="button" className={styles.video__view_button__mob}>
+          <Link
+            href={"/galerie-foto"}
+            className={styles.video__view_button__mob}
+          >
             Vezi toate
-          </button>
+          </Link>
           <div className={styles.video__top}>
-            <h6 className={styles.video__title}>
-              galerie
-              <br />
-              video
-            </h6>
+            <h6 className={styles.video__title}>galerie video</h6>
             <button type="button" className={styles.video__view_button}>
               Vezi toate
             </button>

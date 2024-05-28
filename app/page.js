@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import React from "react"
 import Header from "./components/header"
 import About from "./components/about"
@@ -28,8 +28,11 @@ export default async function Home() {
   //  const { data } = await client.query({
   //    query: GET_DATA,
   //  });
+
+   
   //  const posts = data.getPosts
-  
+  // console.log("posts ", posts)
+  // console.log("posts ", posts.id);
   
 return (
     <main className="flex min-h-screen flex-col items-center justify-between">

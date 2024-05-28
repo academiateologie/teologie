@@ -97,11 +97,6 @@ export default function SliderMobile() {
                   }}
                   onHoverEnd={() => setIsHover(false)}
                 ></motion.img>
-                {/* <div className={styles.post__description}>
-                  <span className={styles.post__slug}>{post.postSlug}</span>
-                  <p className={styles.post__text}>{post.postText}</p>
-                  <p className={styles.post__date_created}>{post.postDate}</p>
-                </div> */}
               </div>
             </SwiperSlide>
           ))}

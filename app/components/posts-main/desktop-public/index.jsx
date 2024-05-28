@@ -24,12 +24,24 @@ const Index = () => {
     const [isHover, setIsHover] = React.useState(false);
     const [onButton, setOnButton] = React.useState(null);
 
-     const pagination = {
-       clickable: true,
-       renderBullet: function (index, className) {
-         return '<span className="text-black text-[20rem] ' + className + '">' + (index + 1) + "</span>";
-       },
-     };
+    const pagination = {
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    };
+
+    const pagination__mob = {
+      clickable: false,
+      type: "fraction",
+      renderFraction: function (currentClass, totalClass) {
+        return (
+          '<span class="' + currentClass + '">0</span>' +
+          " / " 
+          + '<span class="' + totalClass + '"></span>'
+        );
+      },
+    };
 
   return (
     <div className={styles.publications__posts}>
@@ -41,9 +53,9 @@ const Index = () => {
             rows: 3,
             columns: 3,
           }}
-          spaceBetween={20}
+          spaceBetween={10}
           centeredSlides={false}
-          grabCursor={true}
+          grabCursor={false}
           keyboard={{
             enabled: true,
           }}
@@ -52,6 +64,7 @@ const Index = () => {
               slidesPerView: 1,
               slidesPerGroup: 1,
               spaceBetween: 0,
+              pagination: pagination__mob,
             },
             601: {
               slidesPerView: 3,
@@ -59,13 +72,14 @@ const Index = () => {
             },
           }}
           scrollbar={false}
-          navigation={true}
           pagination={pagination}
+          navigation={true}
           modules={[Keyboard, Scrollbar, Navigation, Pagination, Grid]}
-          className="mt-0 w-full tablet:mt-[40rem] h-[1460rem] pb-[40rem] relative bg-transparent"
+          className="mt-0 pl-[20rem] tablet:w-full tablet:mt-[40rem] h-[540rem] tablet:h-[1600rem] tablet:pb-[40rem] relative bg-transparent"
         >
           {posts.map((post) => (
-              <SwiperSlide key={post.id}>
+            <SwiperSlide key={post.id}>
+              <Link href={`/publicare/${post.id}`}>
                 <motion.div
                   onHoverStart={() => {
                     setIsHover(true);
@@ -77,20 +91,20 @@ const Index = () => {
                 >
                   <div className={styles.publications__post__item}>
                     {isHover && onButton === post.id && (
-                      <Link
-                        href={`/publicare/${post.id}`}
-                        className={styles.on__hover_button}
-                      >
-                        mai mult
-                      </Link>
+                      <div className={styles.on__hover_button}>mai mult</div>
+                    )}
+                    {isHover && onButton === post.id && (
+                      <span className={styles.on__hover_blur}></span>
                     )}
                     <img
                       src={post.post_img}
-                      className="w-full h-[256rem]"
+                      className="w-[160rem] h-[130rem] tablet:w-full tablet:h-[256rem]"
                       alt={post.text_title}
                     ></img>
                     <div className={styles.post__description}>
-                      <span className={styles.post__slug}>{post.slug_text}</span>
+                      <span className={styles.post__slug}>
+                        {post.slug_text}
+                      </span>
                       <p className={styles.post__text}>{post.text_subtitle}</p>
                       <p className={styles.post__date_created}>
                         {post.date_created}
@@ -98,12 +112,9 @@ const Index = () => {
                     </div>
                   </div>
                 </motion.div>
-              </SwiperSlide>
+              </Link>
+            </SwiperSlide>
           ))}
-          {/* <div className={styles.navigate__counter}>
-            <p className={styles.counter__all_items}>0{posts.length} /</p>
-            <p className={styles.counter__current_item}> 0{posts.length + 2}</p>
-          </div> */}
         </Swiper>
       </div>
     </div>
@@ -111,32 +122,3 @@ const Index = () => {
 }
 
 export default Index
-
- {
-   /* <SwiperSlide key={post.description}>
-                <a
-                  href={`/${post.id}`}
-                  onClick={() => console.log(post.id)}
-                >
-                  <div className={styles.publications__post__item}>
-                    {isHover && onButton === post.id && (
-                      <button type="button" className={styles.on__hover_button}>
-                        mai mult
-                      </button>
-                    )}
-                    <img
-                      src={post.post_img}
-                      className="w-full h-[256rem]"
-                      alt={post.textSlug}
-                    ></img>
-                    <div className={styles.post__description}>
-                      <span className={styles.post__slug}>{post.textSlug}</span>
-                      <p className={styles.post__text}>{post.description}</p>
-                      <p className={styles.post__date_created}>
-                        {post.publishedDate}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </SwiperSlide> */
- }

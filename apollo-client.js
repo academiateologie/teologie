@@ -4,6 +4,7 @@
 // const client = new ApolloClient({
 //   link: new HttpLink({
 //     uri: "https://teologie-server.onrender.com",
+//     // uri: "http://localhost:3005/graphl",
 //   }),
 //   cache: new InMemoryCache(),
 // });

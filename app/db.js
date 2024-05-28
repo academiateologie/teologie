@@ -3,7 +3,7 @@ export const posts = [
     id: "664c617d92b21a28ad10e8db",
     text_title:
       "PC Arhimandrit Nectarie Gherman a fost desemnat președinte al Sectorului Sinodal Învățământ Religios și Studii Teologice",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716288268/1_dfdgkx.jpg",
     description_text: [
@@ -22,7 +22,7 @@ export const posts = [
     id: "664ed3d3107974a2d4301bf3",
     text_title:
       "Mesajul de condoleanțe al PC Arhimandrit Nectarie (Gherman), adresat Ieromonahului Macarie (Crudu), decanul Facultății de Teologie, în legătură cu trecerea la cele veșnice a tatălui său",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716282541/2_zlekh4.jpg",
     description_text: [
@@ -36,7 +36,7 @@ export const posts = [
   {
     id: "664ed6bb107974a2d4301bf4",
     text_title: "Pelerinaj la sfintele mănăstiri ale Moldovei",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716442871/3_ejkfnf.jpg",
     description_text: [
@@ -52,7 +52,7 @@ export const posts = [
   {
     id: "664ed7e2107974a2d4301bf5",
     text_title: "Închinare la sfântul veșmânt al Sfântului Ioan Rusul",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716443389/4_jffkv0.jpg",
     description_text: [
@@ -68,7 +68,7 @@ export const posts = [
     id: "664edb0a107974a2d4301bf6",
     text_title:
       "Înaltpreasfințitul Mitropolit Vladimir a primit vizita prorectorilor ATOM, PC arhim. Nectarie (Gherman) și dl Nicolae Ionichi",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716444195/5_jo4ovx.jpg",
     description_text: [
@@ -90,7 +90,7 @@ export const posts = [
     id: "664edd82107974a2d4301bf7",
     text_title:
       "Primul pelerinaj al elevilor seminariști la Sfântul Muntele Athos",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716444773/6_faza4p.jpg",
     description_text: [
@@ -113,7 +113,7 @@ export const posts = [
     id: "664ef7728cdd4bc2a3956be9",
     text_title:
       "Lansare de carte VOINO-IASENEȚKI ARHIEPISCOP ȘI CHIRURG: VIAȚA ȘI HAGIOGRAFIA SF NTUL IERARH LUCA AL CRIMEII",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716451397/7_s4xvdq.jpg",
     description_text: [
@@ -142,7 +142,7 @@ export const posts = [
     id: "664efd308cdd4bc2a3956bea",
     text_title:
       "Întâlnire duhovnicească a tinerilor teologi cu Părintele Diacon Nicolae Fuștei, la Academia de Teologie Ortodoxă",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716452620/8_uv8zxk.webp",
     description_text: [
@@ -177,7 +177,7 @@ export const posts = [
     id: "664f0046c44b1cecde98334e",
     text_title:
       "Elevii și studenții din cadrul ATOM, desemnați la Gala Tineretului Ortodox, ediția a VIII-a",
-    slug_text: "some slug",
+    slug_text: "ortodoxie",
     post_img:
       "https://res.cloudinary.com/dkkozauci/image/upload/v1716453427/9_umhq3b.jpg",
     description_text: [

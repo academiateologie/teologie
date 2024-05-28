@@ -1,0 +1,15 @@
+.publications {
+    @apply bg-[#f0f0f0] pt-[77rem] pb-[70rem] w-full;
+
+    @media screen and (max-width: 600px) {
+     @apply overflow-hidden pt-[16rem] pb-[40rem];   
+    }
+}
+
+.container {
+    @apply w-[1200rem] mx-auto;
+
+    @media screen and (max-width: 600px) {
+        @apply w-full;
+    }
+}

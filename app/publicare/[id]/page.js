@@ -4,6 +4,7 @@ import Header from "../../components/header-about";
 import Footer from "../../components/footer";
 import GalleryMob from "../gallery-mobile";
 import { posts } from "../../db";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return posts.map((item) => ({
@@ -17,6 +18,7 @@ export default async function PostPage({ params }) {
   if (!item) {
     return <div>Item not found</div>;
   }
+  // console.log("item ", item);
 
   return (
     <>
@@ -24,10 +26,21 @@ export default async function PostPage({ params }) {
       <div className={styles.post}>
         <div className={styles.post__container}>
           <div className={styles.post__img}>
-            <img
+            {/* <img
               src={item.post_img}
               className="w-full h-full"
               alt="post view"
+            /> */}
+            <Image
+              src={item.post_img}
+              fill
+              sizes="(min-width: 600px) 50vw, 100vw"
+              style={{
+                objectFit: "contain",
+              }}
+              alt={"post view title"}
+              priority="true"
+              quality={100}
             />
           </div>
           <div className={styles.post__bottom_line}>
@@ -77,53 +90,26 @@ export default async function PostPage({ params }) {
         <div className={styles.post__container}>
           <div className={styles.post__gallery_inner}>
             {item.post_img_collection.map((pi, idx) => (
-              <img
-              key={idx}
-                src={pi}
-                className="w-[280rem] h-[222rem]"
-                alt="post view"
-              />
+              <div key={idx} className="relative w-[280rem] h-[222rem]">
+                <Image
+                  src={pi}
+                  fill
+                  sizes="(min-width: 808px) 50vw, 100vw"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                  alt={"post images collection"}
+                  priority="true"
+                  quality={100}
+                />
+              </div>
+              // <img
+              // key={idx}
+              //   src={pi}
+              //   className="w-[280rem] h-[222rem] flex bg-cover bg-center"
+              //   alt="post view"
+              // />
             ))}
-            {/* <img
-              src="/static/gallery/gallery-foto-2.png"
-              className="w-[280rem] h-[222rem]"
-              alt="post view"
-            />
-            <img
-              src="/static/gallery/gallery-foto-2.png"
-              className="w-[280rem] h-[222rem]"
-              alt="post view"
-            />
-            <img
-              src="/static/gallery/gallery-foto-2.png"
-              className="w-[280rem] h-[222rem]"
-              alt="post view"
-            />
-            <img
-              src="/static/gallery/gallery-foto-2.png"
-              className="w-[280rem] h-[222rem]"
-              alt="post view"
-            />
-            <img
-              src="/static/gallery/gallery-foto-2.png"
-              className="w-[280rem] h-[222rem]"
-              alt="post view"
-            />
-            <img
-              src="/static/gallery/gallery-foto-2.png"
-              className="w-[280rem] h-[222rem]"
-              alt="post view"
-            />
-            <img
-              src="/static/gallery/gallery-foto-2.png"
-              className="w-[280rem] h-[222rem]"
-              alt="post view"
-            />
-            <img
-              src="/static/gallery/gallery-foto-2.png"
-              className="w-[280rem] h-[222rem]"
-              alt="post view"
-            /> */}
           </div>
           <GalleryMob item={item} />
         </div>

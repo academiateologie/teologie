@@ -24,6 +24,8 @@ const  Index = ({posts}) => {
     const [onButton, setOnButton] = React.useState(null);
     const [isSlideActive, setIsSlideActive] = React.useState(0)
 
+    const inner__posts = posts.slice(0, 6);
+
   return (
     <div className={styles.publications__posts}>
       <div className={styles.posts__gallery}>
@@ -44,7 +46,6 @@ const  Index = ({posts}) => {
             },
             601: {
               slidesPerView: 3,
-              // slidesPerGroup: 1,
             },
           }}
           scrollbar={true}
@@ -52,39 +53,60 @@ const  Index = ({posts}) => {
           pagination={false}
           modules={[Keyboard, Scrollbar, Navigation, Pagination]}
           className="mt-0 w-full tablet:mt-[40rem] h-[550rem] relative bg-transparent"
-          // onSwiper={(swiper) => setIsSlideActive(swiper.activeIndex)}
-          // onChange={(swiper) => setIsSlideActive(swiper.activeIndex())}
         >
-          {posts.slice(0,6).map((post) => {
-           return <SwiperSlide key={post.id}>
-              <Link
-                href={`/publicare/${post.id}`}
-              >
-                <div className={styles.publications__post__item}>
-                  {/* {isHover && onButton === post.id && (
-                    <button type="button" className={styles.on__hover_button}>
-                      mai mult
-                    </button>
-                  )} */}
-                  <img
-                    src={post.post_img}
-                    className="w-full h-[256rem]"
-                    alt={post.description}
-                  ></img>
-                  <div className={styles.post__description}>
-                    <span className={styles.post__slug}>{post.slug_text}</span>
-                    <p className={styles.post__text}>{post.text_title}</p>
-                    <p className={styles.post__date_created}>
-                      {post.date_created}
-                    </p>
-                  </div>
+          {inner__posts.map((post) => {
+            return (
+              <SwiperSlide key={post.id}>
+                <div
+                >
+                  <motion.div
+                    className={styles.publications__post__item}
+                    onHoverStart={() => {
+                      setIsHover(true);
+                      setOnButton(post.id);
+                    }}
+                    onHoverEnd={() => {
+                      setIsHover(false);
+                    }}
+                  >
+                    {isHover && onButton === post.id && (
+                      <Link
+                        href={`/publicare/${post.id}`}
+                        className={styles.on__hover_button}
+                      >
+                        mai mult
+                      </Link>
+                    )}
+                    {isHover && onButton === post.id && (
+                      <span className={styles.on__hover_blur}></span>
+                    )}
+                    <img
+                      src={post.post_img}
+                      className="w-full h-[256rem]"
+                      alt={post.description}
+                    ></img>
+                    <div className={styles.post__description}>
+                      <span className={styles.post__slug}>
+                        {post.slug_text}
+                      </span>
+                      <p className={styles.post__text}>{post.text_title}</p>
+                      <p className={styles.post__date_created}>
+                        {post.date_created}
+                      </p>
+                    </div>
+                  </motion.div>
                 </div>
-              </Link>
-            </SwiperSlide>
+              </SwiperSlide>
+            );
           })}
           <div className={styles.navigate__counter}>
-            <p className={styles.counter__all_items}>0{posts.length} /</p>
-            <p className={styles.counter__current_item}> 0{posts.length}</p>
+            <p className={styles.counter__all_items}>
+              0{inner__posts.length} /
+            </p>
+            <p className={styles.counter__current_item}>
+              {" "}
+              0{inner__posts.length}
+            </p>
           </div>
         </Swiper>
       </div>

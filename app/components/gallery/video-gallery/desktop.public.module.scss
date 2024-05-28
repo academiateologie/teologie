@@ -10,11 +10,20 @@
 }
 .publications__post__item {
     @apply flex flex-col w-[370rem] h-auto bg-white relative top-0 left-0 z-0;
-    box-shadow: 0rem 10rem 30rem 0rem rgba(0, 0, 0, 0.3);
+   box-shadow: 0rem 10rem 30rem 0rem rgba(0, 0, 0, 0.3);
 
     &:hover {
         box-shadow: 0rem 2rem 4rem 0rem rgba(0, 0, 0, 0.3);
         transition: all ease-in 5ms;
+
+        @media screen and (max-width: 600px) {
+         box-shadow:none;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+        @apply w-[90vw];
+         box-shadow:none;
     }
 }
 .post__image {
@@ -52,7 +61,7 @@
     @apply flex justify-center items-center absolute z-[3] top-[101%] -translate-y-[101%] left-[240rem];
 
     @media screen and (max-width: 600px) {
-      @apply left-[180rem] top-[86%] -translate-y-[86%];
+      @apply left-[196rem] top-[85%] -translate-y-[86%];
      }
 }
 

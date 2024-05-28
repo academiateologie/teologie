@@ -1,16 +1,12 @@
 .publications__posts {
-    @apply block w-[1260rem] mx-auto mt-[72rem];
+    @apply block w-full mx-auto mt-[72rem];
 
     @media screen and (max-width: 600px) {
-     @apply w-screen mt-[30rem];   
+     @apply w-screen mt-[30rem] ml-[20rem];   
     }
 }
 .posts__gallery {
-    @apply w-full flex pb-[80rem];
-
-    @media screen and (max-width: 600px) {
-        @apply pb-[40rem];
-    }
+    @apply w-full flex gap-[45rem] pb-[80rem];
 }
 .publications__post__item {
     @apply flex flex-col w-[370rem] h-auto bg-white relative top-0 left-0 z-0;
@@ -20,78 +16,36 @@
         box-shadow: 0rem 2rem 4rem 0rem rgba(0, 0, 0, 0.3);
         transition: all ease-in 5ms;
     }
-
-    @media screen and (max-width: 600px) {
-        @apply flex-row h-[130rem] w-[398rem];
-        box-shadow: 0 11rem 32rem 0 rgba(0, 0, 0, 0.3);
-
-        &:hover {
-        // box-shadow: none;
-    }
-    }
 }
 .post__image {
     @apply relative z-0;
 }
 .post__description {
     @apply px-[26rem] pb-[28rem] h-[198rem];
-
-    @media screen and (max-width: 600px) {
-        @apply p-[14rem] h-auto relative top-0 left-0 z-0;
-    }
 }
 .post__slug {
     @apply inline-block bg-[#F6DCDA] text-[#CF4A47] text-[12rem] font-bold uppercase py-[5rem] px-[8rem] mt-[23rem];
-
-    @media screen and (max-width: 600px) {
-        @apply mt-0 text-[10rem];
-    }
 }
 .post__text {
     @apply text-[#272B37] text-[20rem] leading-[24rem] font-semibold mt-[16rem];
 
     display: -webkit-box; 
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 3; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-
-    @media screen and (max-width: 600px) {
-        @apply text-[16rem] leading-[20rem];
-    }
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 3; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
 }
 .post__date_created {
     @apply text-[12rem] text-[#808080] leading-none font-bold mt-[30rem] relative top-0 left-0 z-0;
 
     &::after {
         @apply content-[''] absolute top-[-14rem] left-0 z-[1] inline-flex h-[1rem] w-[51rem] bg-[#D9D9D9];
-
-        @media screen and (max-width: 600px) {
-            @apply hidden;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        @apply absolute top-[16rem] left-[164rem] z-[1] mt-0;
     }
 }
 
 .on__hover_button {
-    @apply flex justify-center items-center w-[114rem] h-[50rem] text-[17rem] text-white absolute top-[104rem] left-[50%] -translate-x-[50%] z-[2] border-[1rem] border-[#fff] hover:cursor-default;
+    @apply w-[114rem] h-[50rem] text-[17rem] text-white absolute top-[104rem] left-[50%] -translate-x-[50%] z-[2] border-[1rem] border-[#fff] hover:cursor-default;
     background: rgba(255, 255, 255, 0.3);
-
-    @media screen and (max-width: 600px) {
-        @apply hidden;
-    }
-}
-
-.on__hover_blur {
-    @apply block w-full h-[256rem] absolute top-0 left-0 z-[1];
-    background: rgba(57, 54, 53, 0.6);
-
-    @media screen and (max-width: 600px) {
-        @apply hidden;
-    }
 }
 
 // ===== gallery navigate =====>

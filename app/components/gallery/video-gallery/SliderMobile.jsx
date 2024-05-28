@@ -88,7 +88,7 @@ export default function SliderMobile() {
                 )}
                 <motion.img
                   src={post.postImage}
-                  width={370}
+                  width="100%"
                   height={256}
                   className={styles.post__image}
                   onHoverStart={() => {

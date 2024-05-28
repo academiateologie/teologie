@@ -7,9 +7,9 @@ const Index = async () => {
 
   return (
     <div className={styles.posts__main}>
-      {/* <div className={styles.container}> */}
+      <div className={styles.container}>
         <DesktopPublic />
-      {/* </div> */}
+      </div>
     </div>
   );
 };

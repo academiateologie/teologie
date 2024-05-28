@@ -13,7 +13,7 @@
     }
 }
 .post__img {
-    @apply w-[1200rem] h-[546rem];
+    @apply w-[1200rem] h-[546rem] relative;
 
     @media screen and (max-width: 600px) {
         @apply w-full h-[180rem];

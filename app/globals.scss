@@ -11,14 +11,14 @@
 
 * {
   @apply p-0 m-0 box-border;
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
 }
 
 html {
   width: 100%;
   --scroll-behavior: smooth !important;
-    scroll-behavior: smooth !important;
-   @media screen and (min-width: 320px) {
+  scroll-behavior: smooth !important;
+  @media screen and (min-width: 320px) {
     font-size: calc(100vw / (428 * 1));
   }
   @media screen and (min-width: 600px) {
@@ -33,108 +33,230 @@ body {
   @apply h-full w-full max-w-full relative top-0 left-0 z-[-1] bg-[#F0F0F0];
 }
 
-.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar .swiper-scrollbar-horizontal {
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar .swiper-scrollbar-horizontal {
   margin-left: 300rem;
   width: 50% !important;
 
   @media screen and (max-width: 600px) {
     @apply hidden;
   }
-  
 }
 
 .swiper .swiper-scrollbar-drag {
   background-color: rgb(207, 74, 71) !important;
-    width: 50% !important;
-
+  width: 50% !important;
 }
 
 .desktop_public_posts__gallery__1_SIj {
-  
   .swiper .swiper-button-prev,
   .swiper .swiper-button-next {
-    @apply text-[#272B37] top-[542rem];
+    @apply text-[#272B37] top-[542rem] z-[11];
 
     @media screen and (max-width: 600px) {
       @apply top-[510rem];
     }
 
-  &::after {
-    @apply text-[10rem];
+    &::after {
+      @apply text-[10rem];
 
-     @media screen and (max-width: 600px) {
-      @apply text-[20rem];
-     }
-  }
+      @media screen and (max-width: 600px) {
+        @apply text-[20rem];
+      }
+    }
   }
 
   .swiper .swiper-button-next {
-  @apply right-[235rem];
+    @apply right-[200rem];
 
-  @media screen and (max-width: 600px) {
-      @apply right-[120rem];
-     }
+    @media screen and (max-width: 600px) {
+      @apply right-[150rem];
+    }
   }
 
   .swiper .swiper-button-prev {
-  @apply left-[960rem];
+    @apply left-[920rem];
 
-  @media screen and (max-width: 600px) {
-      @apply left-[110rem];
-     }
+    @media screen and (max-width: 600px) {
+      @apply left-[150rem];
+    }
+  }
+
+  .swiper-wrapper {
+    @media screen and (max-width: 600px) {
+      @apply ml-[15rem];
+    }
+  }
+}
+
+.desktop_public_posts__gallery__UNQnC {
+  .swiper .swiper-button-next {
+    @apply right-[200rem];
+
+    @media screen and (max-width: 600px) {
+      @apply right-[150rem];
+    }
+  }
+
+  .swiper .swiper-button-prev {
+    @apply left-[940rem];
+
+    @media screen and (max-width: 600px) {
+      @apply left-[150rem];
+    }
+  }
+
+  .swiper-wrapper {
+    @media screen and (max-width: 600px) {
+      @apply ml-[20rem];
+    }
+  }
+}
+
+.desktop_public_posts__gallery__MGNs2 {
+  .swiper .swiper-button-next {
+    @apply right-[200rem];
+
+    @media screen and (max-width: 600px) {
+      @apply right-[150rem];
+    }
+  }
+
+  .swiper .swiper-button-prev {
+    @apply left-[940rem];
+
+    @media screen and (max-width: 600px) {
+      @apply left-[150rem];
+    }
+  }
+
+  .swiper-wrapper {
+    @media screen and (max-width: 600px) {
+      @apply ml-[20rem];
+    }
   }
 }
 
 .gallery_gallery__mobile__zxY0V {
-
   .swiper .swiper-button-prev,
   .swiper .swiper-button-next {
-    @apply text-[#272B37] ;
+    @apply text-[#272B37];
 
     @media screen and (max-width: 600px) {
       @apply top-[330rem];
     }
 
-  &::after {
-    @apply text-[10rem];
+    &::after {
+      @apply text-[10rem];
 
-     @media screen and (max-width: 600px) {
-      @apply text-[20rem];
-     }
-  }
+      @media screen and (max-width: 600px) {
+        @apply text-[20rem];
+      }
+    }
   }
 
   .swiper-button-next {
-
     @media screen and (max-width: 600px) {
-        // @apply right-[150rem];
-      }
+      // @apply right-[150rem];
+    }
   }
 
   .swiper-button-prev {
-
     @media screen and (max-width: 600px) {
-        @apply left-[100rem];
-      }
-}
-
+      @apply left-[100rem];
+    }
+  }
 }
 
 .desktop_public_posts__gallery__IJtP7 {
-  .swiper {
-    @apply py-[30rem];
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+      @apply text-[#272B37] top-[1580rem];
+    @media screen and (max-width: 600px) {
+       @apply top-[530rem] z-10;
+    }
+
+    &::after {
+      @apply text-[20rem] font-bold;
+      @media screen and (max-width: 600px) {
+        @apply text-[#272B37] text-[20rem] font-bold;
+      }
+    }
   }
-  .swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal {
-    @apply text-black text-[20rem];
+  .swiper .swiper-button-next {
+    @apply right-[500rem];
+    @media screen and (max-width: 600px) {
+      @apply right-[140rem] z-[12];
+    }
   }
-}
- .swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal {
-    @apply text-black text-[20rem];
+
+  .swiper .swiper-button-prev {
+    @apply left-[500rem];
+    @media screen and (max-width: 600px) {
+      @apply left-[140rem] z-[12];
+    }
+  }
+
+  // .swiper-pagination {
+  //   @apply z-[2];
+  // }
+  .swiper-pagination-bullet {
+    @apply text-[21rem] font-semibold text-[#272b37] bg-transparent opacity-100;
+  }
+
+  .swiper-pagination-bullet-active  {
+    @apply text-[21rem] font-semibold text-[#cf4a47] ;
   }
 
   .swiper-wrapper {
-    @apply pl-[30rem];
-    @media screen and (max-width:600px) {
-      @apply pl-[15rem];
+    @media screen and (max-width: 600px) {
+    @apply pl-[15rem] pr-[15rem];
+  }
+  }
+
+  .swiper-pagination-fraction {
+    @apply flex justify-center gap-[10rem] text-[21rem] bottom-[-8rem];
+  }
+  .swiper-pagination-current,
+  .swiper-pagination-total {
+    @apply text-[21rem] text-[#515151] font-semibold relative;
+
+    &::before {
+      @apply content-['0'] inline-flex text-[21rem] text-[#515151] font-semibold;
     }
   }
+  .swiper-pagination-current {
+    @apply text-[#cf4a47];
+
+    &::before {
+      @apply content-['0'] inline-flex text-[21rem] text-[#cf4a47] font-semibold;
+    }
+  }
+}
+
+.slider_mobile_posts__gallery__rA_PC {
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+
+    @media screen and (max-width: 600px) {
+      @apply text-[#272B37] top-[620rem];
+    }
+
+    &::after {
+      @media screen and (max-width: 600px) {
+        @apply text-[20rem] font-bold;
+      }
+    }
+  }
+  .swiper .swiper-button-next {
+    @media screen and (max-width: 600px) {
+      @apply right-[140rem];
+    }
+  }
+
+  .swiper .swiper-button-prev {
+    @media screen and (max-width: 600px) {
+      @apply left-[140rem];
+    }
+  }
+}

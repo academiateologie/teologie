@@ -2,7 +2,10 @@ import React from 'react'
 import styles from "./organizational.module.scss"
 import Gerb from "./svg/gerb/page"
 import Image from 'next/image';
-import img from "../../../public/static/organizational/gallery-item.png"
+import person__img_1 from "../../../public/static/about/person-about/person-about-1.webp"
+import person__img_2 from "../../../public/static/about/person-about/person-about-2.webp"
+import person__img_3 from "../../../public/static/about/person-about/person-about-3.webp"
+import person__img_4 from "../../../public/static/about/person-about/person-about-4.webp";
 
 function Page() {
   return (
@@ -78,7 +81,7 @@ function Page() {
         <div className={styles.organizational__gallery}>
           <div className={styles.organizational__item}>
             <Image
-              src={img}
+              src={person__img_1}
               width={274}
               height={314}
               className={styles.item__image}
@@ -94,7 +97,7 @@ function Page() {
           </div>
           <div className={styles.organizational__item}>
             <Image
-              src={img}
+              src={person__img_2}
               width={274}
               height={314}
               className={styles.item__image}
@@ -111,7 +114,7 @@ function Page() {
           </div>
           <div className={styles.organizational__item}>
             <Image
-              src={img}
+              src={person__img_3}
               width={274}
               height={314}
               className={styles.item__image}
@@ -126,16 +129,16 @@ function Page() {
           </div>
           <div className={styles.organizational__item}>
             <Image
-              src={img}
+              src={person__img_4}
               width={274}
               height={314}
               className={styles.item__image}
               alt=""
             />
             <div className={styles.item__description}>
-              <p className={styles.description__name}>Nicolae Ionichi</p>
+              <p className={styles.description__name}>Ierom. Macarie (Crudu)</p>
               <p className={styles.description__text}>
-                Prorector pentru management instituțional
+                Decan al Facultății de Teologie Ortodoxă
               </p>
             </div>
           </div>

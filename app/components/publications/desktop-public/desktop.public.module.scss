@@ -1,20 +1,21 @@
 .publications__posts {
-    @apply block w-[1200rem] mx-auto mt-[72rem];
+    @apply block w-[1200rem] mx-auto mt-[52rem];
 
     @media screen and (max-width: 600px) {
      @apply w-screen mt-[30rem];   
     }
 }
 .posts__gallery {
-    @apply w-full flex gap-[45rem] ml-[-30rem];
+    @apply w-full flex gap-[45rem];
 }
 .publications__post__item {
-    @apply flex flex-col w-[370rem] h-auto bg-white relative top-0 left-0 z-0;
+    @apply flex flex-col w-[370rem] h-auto bg-white relative top-0 left-0 z-0 transition-all duration-200;
     // box-shadow: 0rem 10rem 30rem 0rem rgba(0, 0, 0, 0.3);
 
     &:hover {
+        // @apply transition-all duration-200;
         box-shadow: 0rem 2rem 4rem 0rem rgba(0, 0, 0, 0.3);
-        transition: all ease-in 5ms;
+        // transition: all ease-in 5ms;
     }
 
     @media screen and (max-width: 600px) {
@@ -25,13 +26,13 @@
     @apply relative z-0;
 }
 .post__description {
-    @apply px-[26rem] pb-[28rem] h-[198rem];
+    @apply px-[26rem] pb-[28rem] h-[198rem] flex flex-col justify-between;
 }
 .post__slug {
-    @apply inline-block bg-[#F6DCDA] text-[#CF4A47] text-[12rem] font-bold uppercase py-[5rem] px-[8rem] mt-[23rem];
+    @apply inline-block bg-[#F6DCDA] text-[#CF4A47] text-[12rem] font-bold leading-none uppercase py-[7rem] px-[10rem] mt-[23rem] w-fit;
 }
 .post__text {
-    @apply text-[#272B37] text-[20rem] leading-[24rem] font-semibold mt-[16rem];
+    @apply text-[#272B37] text-[20rem] leading-[24rem] font-semibold mt-[12rem];
 
             display: -webkit-box; 
             -webkit-box-orient: vertical; 
@@ -48,8 +49,12 @@
 }
 
 .on__hover_button {
-    @apply w-[114rem] h-[50rem] flex justify-center items-center text-[17rem] text-white absolute top-[104rem] left-[50%] -translate-x-[50%] z-[2] border-[1rem] border-[#fff] hover:cursor-default;
+    @apply w-[114rem] h-[50rem] flex justify-center items-center text-[17rem] text-white absolute top-[104rem] left-[50%] -translate-x-[50%] z-[2] border-[1rem] border-[#fff] hover:cursor-pointer;
     background: rgba(255, 255, 255, 0.3);
+}
+.on__hover_blur {
+    @apply block w-full h-[256rem] absolute top-0 left-0 z-[1];
+    background: rgba(102, 34, 15, 0.6);
 }
 
 // ===== gallery navigate =====>

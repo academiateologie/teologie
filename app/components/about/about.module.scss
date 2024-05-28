@@ -40,7 +40,7 @@
     }
 }
 .about__button {
-    @apply w-[212rem] text-[17rem] text-[#66220F] font-semibold leading-none py-[16rem] uppercase flex justify-center mt-[40rem] border-[1px] border-[#66220F] hover:bg-white/50 transition-all duration-200;
+    @apply w-[212rem] text-[17rem] text-[#66220F] font-semibold leading-none py-[16rem] uppercase flex justify-center mt-[40rem] border-[1px] border-[#66220F] tablet:hover:bg-white/50 transition-all duration-200;
 
     @media screen and (max-width: 600px) {
         @apply bg-[#66220F] text-white font-normal w-[90vw];

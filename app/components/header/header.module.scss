@@ -1,10 +1,10 @@
 .header {
-    @apply w-full h-[100dvh] relative z-0;
+    @apply w-full h-[900rem] relative z-0;
     font-family: 'Myriad Pro';
 
-    @media screen and (min-width: 2000px) {
-        @apply h-[900px];
-    }
+    // @media screen and (min-width: 2000px) {
+    //     @apply h-[900px];
+    // }
 
     @media screen and (max-width: 600px) {
         @apply h-[100dvh];
@@ -126,12 +126,12 @@
         @apply w-[398rem] mt-[20rem];
     }
 }
-//  ===== burger buttoln =====>
+//  ===== burger button =====>
 .burger__button {
     @apply hidden;
 
     @media screen and (max-width: 600px) {
-        @apply inline-block;
+        @apply inline-block hover:cursor-none;
      span {
         @apply inline-flex w-[38rem] h-[6rem] bg-white rounded-full relative top-0 left-0 z-0;
 
