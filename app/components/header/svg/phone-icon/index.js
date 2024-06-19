@@ -1,7 +1,7 @@
 const Index = () => {
   return (
     <svg
-      className="w-[31rem] tablet:h-[22rem] tablet:w-[22rem]"
+      className="w-[28rem] h-[28rem] tablet:h-[22rem] tablet:w-[22rem]"
       viewBox="0 0 22 22"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

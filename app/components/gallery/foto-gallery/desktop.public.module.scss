@@ -2,11 +2,12 @@
     @apply block w-[1200rem] mx-auto mt-[72rem];
 
     @media screen and (max-width: 600px) {
-     @apply w-[100vw] mt-[30rem];   
+     @apply w-full mt-[30rem];   
     }
 }
 .posts__gallery {
     @apply w-full flex gap-[45rem];
+
 }
 .publications__post__item {
     @apply flex flex-col w-[370rem] h-auto bg-white relative top-0 left-0 z-0;
@@ -22,7 +23,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        @apply w-[90vw];
+        @apply w-[90vw] bg-transparent;
          box-shadow:none;
     }
 }
@@ -52,23 +53,4 @@
 .on__hover_button {
     @apply w-[114rem] h-[50rem] text-[17rem] text-white absolute top-[104rem] left-[50%] -translate-x-[50%] z-[2] border-[1rem] border-[#fff] hover:cursor-default;
     background: rgba(255, 255, 255, 0.3);
-}
-
-// ===== gallery navigate =====>
-
-
-.navigate__counter {
-    @apply flex justify-center items-center absolute z-[3] top-[101%] -translate-y-[101%] left-[240rem];
-
-    @media screen and (max-width: 600px) {
-      @apply left-[194rem] top-[85%] -translate-y-[85%];
-     }
-}
-
-.counter__all_items {
-    @apply text-[#CF4A47] text-[14rem] font-bold;
-}
-
-.counter__current_item {
-    @apply text-[#515151] text-[14rem] font-bold;
 }

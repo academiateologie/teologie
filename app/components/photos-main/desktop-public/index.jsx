@@ -1,161 +1,86 @@
-"use client"
-import React from 'react'
-import styles from "./desktop.public.module.scss"
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { posts } from "../../../db";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Keyboard,
-  Grid
-} from "swiper/modules";
+"use client";
+import React from "react";
+import styles from "./desktop.public.module.scss";
+import Image from "next/image";
+import Head from "next/head";
+import { collection } from "../../../db";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Grid } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/grid";
-import Link from 'next/link';
 
 const Index = () => {
-  const [isHover, setIsHover] = React.useState(false);
-  const [onButton, setOnButton] = React.useState(null);
-
   const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return (
-        '<span className="text-black text-[20rem] ' +
-        className +
-        '">' +
-        (index + 1) +
-        "</span>"
-      );
+    type: "fraction",
+    renderFraction: function (currentClass, totalClass) {
+      return `<span class='${currentClass}'></span> / <span class=
+        ${totalClass}></span>`;
     },
   };
 
+  const pagination__mob = {
+    clickable: false,
+    type: "fraction",
+  };
+  
   return (
-    <div className={styles.publications__posts}>
-      <div className={styles.posts__gallery}>
-        <Swiper
-          slidesPerView={3}
-          grid={{
-            fill: "row",
-            rows: 5,
-            columns: 3,
-          }}
-          spaceBetween={20}
-          centeredSlides={false}
-          grabCursor={true}
-          keyboard={{
-            enabled: true,
-          }}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-              spaceBetween: 0,
-            },
-            601: {
-              slidesPerView: 3,
-              slidesPerGroup: 1,
-            },
-          }}
-          scrollbar={false}
-          navigation={true}
-          pagination={pagination}
-          modules={[Keyboard, Scrollbar, Navigation, Pagination, Grid]}
-          className="mt-0 w-full tablet:mt-[40rem] h-[1460rem] pb-[40rem] relative bg-transparent"
-        >
-          {posts.map((post, idx) => (
-            <SwiperSlide key={idx}>
-              <motion.div
-                onHoverStart={() => {
-                  setIsHover(true);
-                  setOnButton(post.id);
-                }}
-                onHoverEnd={() => {
-                  setIsHover(false);
-                }}
-              >
-                {/* <div className={styles.publications__post__item}> */}
-                {/* {isHover && onButton === post.id && (
-                      <Link
-                        href={`/publicare/${post.id}`}
-                        className={styles.on__hover_button}
-                      >
-                        mai mult
-                      </Link>
-                    )} */}
-                <img
-                  src={post.post_img}
-                  className="w-full h-[256rem]"
-                  alt={post.text_title}
-                ></img>
-                {/* <div key={idx} className="relative w-[280rem] h-[222rem]">
-                      <Image
-                        src={""}
-                        fill
-                        sizes="(min-width: 808px) 50vw, 100vw"
-                        style={{
-                          objectFit: "cover",
-                        }}
-                        alt={"post images collection"}
-                        priority="true"
-                        quality={100}
-                      /> */}
-                {/* <div className={styles.post__description}>
-                      <span className={styles.post__slug}>{post.slug_text}</span>
-                      <p className={styles.post__text}>{post.text_subtitle}</p>
-                      <p className={styles.post__date_created}>
-                        {post.date_created}
-                      </p>
-                    </div> */}
-                {/* </div> */}
-              </motion.div>
-            </SwiperSlide>
-          ))}
-          {/* <div className={styles.navigate__counter}>
-            <p className={styles.counter__all_items}>0{posts.length} /</p>
-            <p className={styles.counter__current_item}> 0{posts.length + 2}</p>
-          </div> */}
-        </Swiper>
+    <>
+      <div className={styles.publications__posts}>
+        <div className={styles.posts__gallery}>
+          <Swiper
+            spaceBetween={10}
+            centeredSlides={false}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 40,
+                pagination: pagination__mob,
+                grid: {
+                  fill: "column",
+                  column: 1,
+                  rows: 2,
+                },
+              },
+              601: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                grid: {
+                  fill: "column",
+                  column: 3,
+                  rows: 3,
+                },
+              },
+            }}
+            pagination={pagination}
+            navigation={true}
+            modules={[Navigation, Pagination, Grid]}
+            className="mt-0 w-[94vw] tablet:w-full tablet:mt-[40rem] h-[640rem] tablet:h-[1000rem] tablet:pb-[40rem] relative bg-transparent"
+          >
+            {collection.map((url, index) => (
+              <SwiperSlide key={index}>
+                <div className="h-[260rem] w-full tablet:w-[370rem] tablet:h-[280rem] overflow-hidden">
+                  <Image
+                    className="h-full w-full object-cover"
+                    alt={url}
+                    width={0}
+                    height={0}
+                    src={url}
+                    sizes="(min-width: 600px) 50vw, 100vw"
+                    quality={100}
+                    loading={"lazy"}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
-    </div>
+    </>
   );
-}
+};
 
-export default Index
-
- {
-   /* <SwiperSlide key={post.description}>
-                <a
-                  href={`/${post.id}`}
-                  onClick={() => console.log(post.id)}
-                >
-                  <div className={styles.publications__post__item}>
-                    {isHover && onButton === post.id && (
-                      <button type="button" className={styles.on__hover_button}>
-                        mai mult
-                      </button>
-                    )}
-                    <img
-                      src={post.post_img}
-                      className="w-full h-[256rem]"
-                      alt={post.textSlug}
-                    ></img>
-                    <div className={styles.post__description}>
-                      <span className={styles.post__slug}>{post.textSlug}</span>
-                      <p className={styles.post__text}>{post.description}</p>
-                      <p className={styles.post__date_created}>
-                        {post.publishedDate}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </SwiperSlide> */
- }
+export default Index;

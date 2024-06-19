@@ -1,7 +1,13 @@
+"use client"
+import { motion } from "framer-motion";
+
 const Index = () => {
   return (
-    <svg
+    <motion.svg
       className="w-[156rem] tablet:w-[204rem] h-[176rem] tablet:h-[178rem] absolute bottom-[-95%] tablet:bottom-[-50%] left-[4%] tablet:left-[-20%] z-[3]"
+      initial={{ opacity: 0, x: -100, y: 100, rotate: 40 }}
+      animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
+      transition={{ duration: 2 }}
       viewBox="0 0 254 178"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +41,7 @@ const Index = () => {
         fill="url(#pattern_117_27060)"
         fillOpacity="1.000000"
       />
-    </svg>
+    </motion.svg>
   );
 };
 

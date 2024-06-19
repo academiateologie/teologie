@@ -6,30 +6,21 @@
         @apply h-[320rem];
     }
 }
-
 .header__wrapper {
-    @apply h-full w-full absolute top-0 left-0 z-[1] bg-[url('../../../public/static/header/header-mobile.webp')] tablet:bg-[url('../../../public/static/header/header-bg.webp')] bg-cover tablet:bg-center bg-no-repeat after:content-[''] after:block after:absolute after:top-0 after:left-0 after:z-[2] after:h-full after:w-screen after:bg-[#39363566]/40;
+    @apply h-full w-full absolute top-0 left-0 z-[1] bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718261649/header-mobile_yzdfii.webp')] tablet:bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718261274/header-bg_qwhawq.webp')] bg-cover tablet:bg-center bg-no-repeat after:content-[''] after:block after:absolute after:top-0 after:left-0 after:z-[2] after:h-full after:w-full after:bg-[#39363566]/40;
 
     @media screen and (max-width: 600px) {
         @apply overflow-hidden;
             background-position-x: center;
     }
 }
-
 .header__top_gradient {
     @apply block absolute top-0 left-0 z-[2] h-[140rem] w-full;
     background-image: linear-gradient(0deg, rgba(22, 11, 3, 0) 0%, #160b03 100%);
 }
-
-.header__bottom_gradient {
-    @apply block absolute bottom-0 left-0 z-[2] h-[272rem] w-full;
-    background-image: rgba(57, 54, 53, 0.4);
-}
-
 .container {
     @apply w-[1200rem] mx-auto;
 }
-
 .header__top {
     @apply flex justify-between items-center gap-[25rem] pt-[20rem] relative top-0 z-[3] uppercase;
 
@@ -50,49 +41,36 @@
             @apply inline-flex;
         }
         .item__selector {
-            @apply inline-flex hover:rotate-180;
+            @apply inline-flex;
+
+            &_rotate {
+            @apply inline-flex rotate-180;
+        }
         }
     }
-}
 
-.bottom__items {
-    @apply flex justify-center items-center gap-[25rem] w-full pb-[52rem] absolute bottom-0 z-[3];
+      .item__selector {
+            @apply inline-flex self-center;
 
-    @media screen and (max-width: 600px) {
-        @apply items-start px-[15rem] gap-[20rem];
-    }
+            &_rotate {
+            @apply inline-flex rotate-180;
+        }
+        }
 
-    .bottom__item {
-        @apply flex items-center gap-[10rem];
+    .top__item_menu {
+        @apply absolute top-[30rem] left-0 flex flex-col h-auto w-[154rem];
+        background: rgba(46, 41, 20, 0.8);
+        box-shadow: 0 4rem 4rem 0 rgba(0, 0, 0, 0.8);
 
-        @media screen and (max-width: 600px) {
-            @apply gap-0;
-
-            &:nth-child(1) {
-                @apply gap-[10rem];
+        ul {
+            li {
+                @apply w-full leading-none;
             }
-        }
-    }
-    .item__icon {
-        @apply flex gap-[25rem] text-[17rem] font-semibold text-white;
-    }
-    .item__text {
-        @apply flex gap-[25rem] text-[17rem] font-semibold text-white;
 
-        @media screen and (max-width: 600px) {
-            @apply hidden;
-        }
-    }
-
-    .item__text_mob {
-        @apply hidden;
-
-        @media screen and (max-width: 600px) {
-            @apply flex gap-[25rem] text-[15rem] font-normal text-white;
+            a {}
         }
     }
 }
-
 .header__title {
     @apply text-[52rem] text-white font-bold mt-[60rem] leading-[66rem] relative z-[3] uppercase;
     text-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.8);
@@ -100,32 +78,6 @@
     @media screen and (max-width: 600px) {
         @apply text-[40rem] leading-none left-[8%];
         text-shadow: 2rem 2rem 4rem 0 rgba(0, 0, 0, 0.8);
-    }
-}
-
-// ===== subheader =====>
-.subheader {
-    @apply bg-[#F0F0F0] w-full flex justify-center;
-}
-.subheader__wrapper {
-    @apply flex justify-center items-center gap-[70rem] py-[66rem];
-
-    @media screen and (max-width: 600px) {
-        @apply flex-col py-[30rem] gap-0;
-    }
-}
-.subheader__text {
-    @apply text-[28rem] text-[#272b37] w-[683rem];
-
-    @media screen and (max-width: 600px) {
-        @apply text-[20rem]  w-screen px-[20rem] font-normal leading-[28rem] text-center;
-    }
-}
-.subheader__image {
-    @apply w-[374rem] h-[225rem] bg-[url('../../../public/static/header/subheader-img.png')] bg-cover bg-no-repeat;
-
-    @media screen and (max-width: 600px) {
-        @apply w-[398rem] mt-[20rem];
     }
 }
 //  ===== burger button =====>

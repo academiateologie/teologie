@@ -2,7 +2,7 @@
     @apply block w-[1200rem] mx-auto mt-[52rem];
 
     @media screen and (max-width: 600px) {
-     @apply w-screen mt-[30rem];   
+     @apply w-full mt-[30rem];   
     }
 }
 .posts__gallery {
@@ -20,6 +20,11 @@
 
     @media screen and (max-width: 600px) {
      @apply w-[93%];   
+     box-shadow: 0rem 10rem 30rem 0rem rgba(0, 0, 0, 0.3);
+
+     &:hover {
+         box-shadow: 0rem 10rem 30rem 0rem rgba(0, 0, 0, 0.3);
+    }
     }
 }
 .post__image {

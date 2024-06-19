@@ -1,22 +1,23 @@
-export const posts = [
+
+export const h__posts = [
   {
     id: "664c617d92b21a28ad10e8db",
     text_title:
       "PC Arhimandrit Nectarie Gherman a fost desemnat președinte al Sectorului Sinodal Învățământ Religios și Studii Teologice",
     slug_text: "ortodoxie",
     post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716288268/1_dfdgkx.jpg",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718371223/1_dfdgkx_ktwvhc.webp",
     description_text: [
-      "S-a audiat:",
+      [<b>S-a audiat:</b>],
       "Raportul Înaltpreasfinţitului Vladimir, Mitropolitul Chișinăului şi al întregii Moldove cu referință la numirea în funcția de președinte al Sectorului Sinodal Învățământ Religios şi Studii Teologice.",
-      "S-a decis:",
+      [<b>S-a decis:</b>],
       "De a desemna pe arhimandritului Nectarie (GHERMAN), Prorector pentru studii al Academiei de Teologie Ortodoxă din Moldova, în funcția de președinte al Sectorului Sinodal Învățământ Religios şi Studii Teologice.",
       "Sursa: mitropolia.md",
     ],
     post_img_collection: [],
     text_subtitle:
       "La ședința ordinară a Sinodului Bisericii Ortodoxe din Moldova din 23 aprilie 2024, PC Arhim. Nectarie Gherman a fost desemnat președinte al Sectorului Sinodal Învățământ Religios și Studii Teologice.",
-    date_created: "24-04-2024",
+    date_created: "24 APR 2024",
   },
   {
     id: "664ed3d3107974a2d4301bf3",
@@ -24,45 +25,36 @@ export const posts = [
       "Mesajul de condoleanțe al PC Arhimandrit Nectarie (Gherman), adresat Ieromonahului Macarie (Crudu), decanul Facultății de Teologie, în legătură cu trecerea la cele veșnice a tatălui său",
     slug_text: "ortodoxie",
     post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716282541/2_zlekh4.jpg",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718371133/2_n09qqc.webp",
     description_text: [
       "Cu durere sufletească am primit vestea mutării la cele veșnice a tatălui Preacuvioșiei Voastre, robul lui Dumnezeu Alexei.\nÎn aceste momente de tristeţe pentru Preacuvioșia voastră, din numele colectivului profesoral al Academiei de Teologie Ortodoxă din Moldova, vă aducem sincere condoleanţe, la acest ceas de durere și întristare omenească, pricinuit de despărțirea pământească, a celu-i ce v-a fost tată și povățuitor prin sincerile și profundele lui cuvinte de învățătură.\nÎl rugăm pe bunul Dumnezeu, să Vă dăruiască Preacuvioșiei Voastre, puteri duhovnicești şi mângâiere cerească, iar pe nou adormitul Alexei, să-l așeze întru odihna cea veșnică, a Împărăției Preasfintei Treimi.\n",
       "Dumnezeu să-l odihnească în pace!",
     ],
     post_img_collection: [],
     text_subtitle: "Preacuvioase părinte Macarie,",
-    date_created: "23-04-2024",
+    date_created: "23 APR 2024",
   },
   {
     id: "664ed6bb107974a2d4301bf4",
     text_title: "Pelerinaj la sfintele mănăstiri ale Moldovei",
     slug_text: "ortodoxie",
     post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716442871/3_ejkfnf.jpg",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788201/home-posts/3-5_atl6jo.webp",
     description_text: [
       "În continuare, elevii s-au deplasat la Mănăstirea „Sf. Mare Mucenic Iacov Persul”, s. Sireți, r. Străşeni, mănăstire care a fost înființată la 10 decembrie 1998, în ziua pomenirii Sfîntului Iacob Persul, de către slujitorii bisericii Sfîntului Ierarh Nicolae din Sireţi, protosinghelul Porfirie, ieromonahul Teodor şi ierodiaconul Natanael.",
       "Elevii au rămas profund impresionați de măreţia aşezămintelor monahale, căci  mănăstirea este tinda raiului, casa lui Dumnezeu, poarta cerului, locul împlinirilor, cerul cel de pe pământ şi locul în care se arată iubirea lui Dumnezeu.",
       "Acest pelerinaj a fost o bucurie duhovnicească pentru elevii seminariști. Pelerinajul a avut drept obiectiv ca elevii să perceapă cât mai mult darurile duhovnicești, să le împroprieze în viața lor și prin acestea să devină la rândul lor modele vrednice de urmat în societate.",
     ],
-    post_img_collection: [],
+    post_img_collection: [
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788200/home-posts/3-2_qwxb5g.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788200/home-posts/3-3_b0zfsi.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788201/home-posts/3-4_dmiuq5.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788201/home-posts/3-5_atl6jo.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788202/home-posts/3-6_q8vgpj.webp",
+    ],
     text_subtitle:
       "În data 22 aprilie, cu ajutorul și binecuvântarea  PC arhimandrit Nectarie (Gherman), directorul Seminarului Teologic Ortodox, elevii Seminarului au avut parte de un deosebit pelerinaj. Sub directa coordonare a profesorilor Seminarului, plecarea a avut loc în cea de-a doua parte a zilei, iar primul obiectiv vizitat a fost Mănăstirea „Adormirea Maicii Domnului”, s. Ţigăneşti, r. Străşeni, care a fost întemeiată, pe la 1725, de boierul Lupu Dencu și de răzeși din comuna Cobalca (acum Codreanca).",
-    date_created: "22-04-2024",
-  },
-  {
-    id: "664ed7e2107974a2d4301bf5",
-    text_title: "Închinare la sfântul veșmânt al Sfântului Ioan Rusul",
-    slug_text: "ortodoxie",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716443389/4_jffkv0.jpg",
-    description_text: [
-      "S-au împlinit 100 de ani de la aducerea moaștelor Sfântului Ioan Rusul din Constantinopol în insula Evia (în orașul Prokopion din Grecia se află Sfintele Moaște) iar potrivit tradiției locale, veșmintele sunt schimbate odată la 25 de ani, fapt pentru care, cu binecuvântarea Înaltpreasfințitului Vladimir,  Mitropolitul Chișinăului și a întregii Moldove, Rector al Academiei de Teologie Ortodoxă Vladimir, și a Înaltpreasfințitului Părinte Mitropolit Hrisostom de Halkida, părintele Nectarie a primit o parte din veșmânt și fesul Sfântului Ioan Rusul pentru a fi aduse în țara noastră spre închinare credincioșilor, pentru totdeauna.",
-      "Preacuvioșia Sa a prezentat celor prezenți odoarele de mare preț ale Sfântului Ioan Rusul, care vor fi expuse spre închinare și se vor păstra în: Biserica Academiei de Teologie din Chișinău – o parte din veșmânt iar la Mănăstirea Horești – fesul Sfântului.",
-    ],
-    post_img_collection: [],
-    text_subtitle:
-      "Luni, 22 aprilie 2024, PC arhimandrit Nectarie (Gherman), prorectorul Academiei de Teologie din Chișinău a adus spre închinare elevilor, studenților și colaboratorii instituții, o parte din veșmânt și fesul Sfântului Ioan Rusul.",
-    date_created: "23-04-2024",
+    date_created: "22 APR 2024",
   },
   {
     id: "664edb0a107974a2d4301bf6",
@@ -70,21 +62,28 @@ export const posts = [
       "Înaltpreasfințitul Mitropolit Vladimir a primit vizita prorectorilor ATOM, PC arhim. Nectarie (Gherman) și dl Nicolae Ionichi",
     slug_text: "ortodoxie",
     post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716444195/5_jo4ovx.jpg",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788207/home-posts/5-3_ccgig6.webp",
     description_text: [
       "S-au împlinit 100 de ani de la aducerea moaștelor Sfântului Ioan Rusul din Constantinopol în insula Evia (în orașul Prokopion din Grecia se află Sfintele Moaște) iar potrivit tradiției locale, veșmintele sunt schimbate odată la 25 de ani, fapt pentru care, cu binecuvântarea Înaltpreasfințitului Părinte Mitropolit Vladimir, Întâistătătorul Bisericii Ortodoxe din Moldova și a Înaltpreasfințitului Părinte Mitropolit Hrisostom de Halkida, părintele Nectarie a primit o parte din veșmânt și fesul Sfântului Ioan Rusul pentru a fi aduse în țara noastră spre închinare credincioșilor, pentru totdeauna.",
       "În cadrul vizitei, Preacuvioșia Sa a prezentat Întâistătătorului odoarele de mare preț ale Sfântului Ioan Rusul, care vor fi expuse spre închinare și se vor păstra în: Biserica Academiei de Teologie din Chișinău – o parte din veșmânt iar la Mănăstirea Horești – fesul Sfântului.",
-      "Cel ce te-a chemat pe tine de pe pământ la lumea cea cerească, ține și după moarte, neschimbat, trupul tău, Sfinte. Căci tu în Asia ai fost dus prizonier și acolo te-ai unit cu Hristos, Ioane. Deci pe Acela roagă-l să mântuiască sufletele noastre. (Tropar, glasul 4)",
+      [
+        <i>
+          Cel ce te-a chemat pe tine de pe pământ la lumea cea cerească, ține și
+          după moarte, neschimbat, trupul tău, Sfinte. Căci tu în Asia ai fost
+          dus prizonier și acolo te-ai unit cu Hristos, Ioane. Deci pe Acela
+          roagă-l să mântuiască sufletele noastre. (Tropar, glasul 4)
+        </i>,
+      ],
     ],
     post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716444194/5-1_ejbxhs.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716444194/5-2_bltsk3.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716444195/5_jo4ovx.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716444195/5-4_ey8i3u.jpg",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788206/home-posts/5-1_x2jhz2.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788207/home-posts/5-2_awckxa.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788207/home-posts/5-3_ccgig6.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788208/home-posts/5-4_mu99qr.webp",
     ],
     text_subtitle:
       "Luni, 22 aprilie 2024, Înaltpreasfințitul Părinte Mitropolit Vladimir a primit la reședința mitropolitană din Chișinău, vizita PC arhimandrit Nectarie (Gherman), prorectorul Academiei de Teologie din Chișinău și starețul Mănăstirii Horești și dl Nicolae Ionichi, prorector pentru management instituțional al ATOM.",
-    date_created: "22-04-2024",
+    date_created: "22 APR 2024",
   },
   {
     id: "664edd82107974a2d4301bf7",
@@ -92,22 +91,63 @@ export const posts = [
       "Primul pelerinaj al elevilor seminariști la Sfântul Muntele Athos",
     slug_text: "ortodoxie",
     post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716444773/6_faza4p.jpg",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718363585/6-3_juy2wq.webp",
     description_text: [
-      "Cu emoții, rugăciune înainte de călătorie, în ziua de 8 aprilie, elevii au ajuns la Tesalonic. Aici grupul de pelerini s-au întâlnit cu Preasfințitul Filaret, Episcop de Căpriana, vicar al mitropoliei Chișinăului și a întregii Moldove, unde și-au plecat capetele și au rostit rugăciuni de mulțumire înaintea moaștelor Sfântului Mare Mucenic Dimitrie Izvorâtorul de Mir, și ale Sfântului Ierarh Grigore Palama.",
+      [
+        <span>
+          Cu emoții, rugăciune înainte de călătorie, în ziua de 8 aprilie,
+          elevii au ajuns la Tesalonic. Aici grupul de pelerini s-au întâlnit cu
+          <b>
+            {" "}
+            Preasfințitul Filaret, Episcop de Căpriana, vicar al mitropoliei
+            Chișinăului și a întregii Moldove
+          </b>
+          , unde și-au plecat capetele și au rostit rugăciuni de mulțumire
+          înaintea moaștelor Sfântului Mare Mucenic Dimitrie Izvorâtorul de Mir,
+          și ale Sfântului Ierarh Grigore Palama.
+        </span>,
+      ],
       "În ziua a treia, elevii și-au îndreptat calea spre Sfântul Munte. Sfântul Munte Athos este o republică monastică cu regim administrativ autonom în cadrul Greciei, având capitala la Karyes.",
-      "Ajunși la Sfântul Munte Athos, elevii au vizitat următoarele mănăstiri:\nMănăstirea Sfântul Pantelimon;\nMănăstirea Simonos Petras;\nMănăstirea Vatoped;\nMănăstirea Pantocrator.\n",
+      [
+        <span>
+          Ajunși la Sfântul Munte Athos, elevii au vizitat următoarele
+          mănăstiri:
+          <br />
+          <br />
+          <span className="ml-[20rem] pt-[20rem]">
+            1. Mănăstirea Sfântul Pantelimon;
+          </span>
+          <br />
+          <span className="ml-[20rem]">2. Mănăstirea Simonos Petras;</span>
+          <br />
+          <span className="ml-[20rem]">3. Mănăstirea Vatoped;</span>
+          <br />
+          <span className="ml-[20rem]">4. Mănăstirea Pantocrator.</span>
+        </span>,
+      ],
       "La toate aceste mănăstiri elevii au fost primiți cu căldură, grijă și bucurie de către comunitatea monahală a fiecărei mănăstiri. Considerăm că, pentru tinerii participanți, dar și pentru însoțitori, acest pelerinaj a constituit o adevărată călătorie inițiatică, pe tărâmul Maicii Domnului, un timp de rugăciune, un prilej de întâlnire providențială cu oameni de înaltă ținută spirituală și intelectuală, dar și un moment de cotitură în formarea duhovnicească a pelerinilor și o anticipare a bucuriei pascale, spre care ne-am îndreptat cu smerenie și cu nădejdea Învierii.",
       "Elevii sunt recunoscători monahilor, pentru invitația în această lume cumpănită de har. De asemenea, îi mulțumesc PC Ahim. Nectarie, pentru purtarea de grijă și generozitate, pentru încredere și deschidere spre astfel de proiecte pentru tineret, ziditoare de suflet.",
     ],
     post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716444769/6-1_eje5f3.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716201183/5-3_dk74hr.jpg",
-      "",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788209/home-posts/6-1_s15uu6.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788210/home-posts/6-2_s9yc2f.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788210/home-posts/6-3_xxp0qz.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788211/home-posts/6-4_jpdmlz.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788212/home-posts/6-5_nciaae.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788212/home-posts/6-6_xiy8gr.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718363589/6-7_jekjua.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788214/home-posts/6-8_qkkhca.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788215/home-posts/6-9_f4cazh.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788215/home-posts/6-10_padeuv.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718363595/6-11_buswjc.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788218/home-posts/6-13_v6njxv.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788219/home-posts/6-14_kx5fgg.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788220/home-posts/6-15_pjb2f0.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788221/home-posts/6-16_rw2ljy.webp",
     ],
     text_subtitle:
       "În perioada 07-11 aprilie 2024, cu binecuvântarea și prin purtarea de grijă a PC Arhim. Nectarie (Gherman), Prorector pentru studii al ATOM și Director al Seminarului Teologic Ortodox din Chișinău, un grup format din 14 elevi seminariști, dimpreună cu Arhim. Nectarie și Prot. Alexandru Comendant, au parcurs un itinerar spiritual inedit – pentru majoritatea dintre ei fiind și prima călătorie la Muntele Athos.",
-    date_created: "22-04-2024",
+    date_created: "22 APR 2024",
   },
   {
     id: "664ef7728cdd4bc2a3956be9",
@@ -115,7 +155,7 @@ export const posts = [
       "Lansare de carte VOINO-IASENEȚKI ARHIEPISCOP ȘI CHIRURG: VIAȚA ȘI HAGIOGRAFIA SF NTUL IERARH LUCA AL CRIMEII",
     slug_text: "ortodoxie",
     post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451397/7_s4xvdq.jpg",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-6_ft0vfl_rwqwv7.webp",
     description_text: [
       "Prezenți la acest eveniment au fost PC Ierom. Dr. Macarie (Crudu), Decan al Facultății de Teologie Ortodoxă, profesori ai acestei instituții, studenți, elevi, și numeroși oaspeți.\nAcest volum despre Sfântul Ierarh Luca al Crimeii, a fost tradus de părintele protoiereu Vasile Ciobanu, paroh al bisericii „Sf. Irh. Nicolae”, din comuna Costești, raionul Ialoveni, și este o lucrare mult așteptată de teologi, medici și oameni din domeniul istoriei și culturii.\nLa lansarea celei de-a doua ediții s-au ostenit: protoiereul Eugen Onicov – coordonator; protoiereu Marin Cij – ctitor; Ion Sochirca – ctitor; Angela Levința – redactor coordonator; Larisa Ersov – redactor literar; macheta – Maria Bondari.\n",
       "Acest eveniment cultural a fost moderat de către prot. Eugen Onicov. În debutul lansării, părintele a subliniat faptul că volumul dat, reprezintă o apariție editorială inedită. De asemenea, părintele a evidențiat abilitatea autorului de a structura lucrarea de față, precum și puterea de sinteză și claritatea mesajului din cadrul acestei cărți.\nProtoiereu Vasile Ciobanu în discursul său s-a referit la viața Sfântului, cît și la relevanța sa în istoria Bisericii în secolul XX.\n",
@@ -125,342 +165,52 @@ export const posts = [
       "Biroul de presă al ATOM",
     ],
     post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451385/7-1_h4yxs3.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451385/7-2_uptcdm.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451385/7-2_uptcdm.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451387/7-3_hctbpn.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451388/7-4_enjipe.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451387/7-5_pvixlh.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451388/7-7_swuwg7.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716451389/7-8_l0jeye.jpg",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-1_d9jx3r_leh27g.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-2_goh9ik_kcgj15.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-3_n5oi6a_gv4qcj.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-4_novf0p_o0wxb3.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-5_fdwebl_xpy9o2.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-6_ft0vfl_rwqwv7.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-7_dekw90_culhqr.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-8_jyeu3v_kplfp2.webp",
     ],
     text_subtitle:
       "Marți, 9 aprilie 2024, în cadrul întâlnirilor duhovnicești, organizate cu binecuvântarea ÎPS Mitropolit Vladimir în perioada Postului Mare, la Academia de Teologie Ortodoxă din Moldova a avut loc lansarea celei de-a doua ediții extinse a cărții ce a văzut recent lumina tiparului „VOINO – IASENEȚKI arhiepiscop și chirurg: viața și hagiografia”.",
-    date_created: "11-04-2024",
+    date_created: "11 APR 2024",
   },
-  {
-    id: "664efd308cdd4bc2a3956bea",
-    text_title:
-      "Întâlnire duhovnicească a tinerilor teologi cu Părintele Diacon Nicolae Fuștei, la Academia de Teologie Ortodoxă",
-    slug_text: "ortodoxie",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452620/8_uv8zxk.webp",
-    description_text: [
-      "Marți, 2 aprilie 2024, în cadrul întâlnirilor duhovnicești, organizate cu binecuvântarea ÎPS Mitropolit Vladimir în perioada Postului Mare, la Academia de Teologie Ortodoxă din Moldova a avut loc întâlnirea duhovnicească cu Părintele Diacon Lect. Univ. Dr. Nicolae Fuștei, profesor de Apologetică.",
-      "Părintele profesor a conferențiat pe tema: „Știința în sprijinul credinței”, care a adunat elevi seminariști și studenți teologi, dornici de a participa la această întâlnire duhovnicească cu un vrednic slujitor și teolog al Bisericii din zilele noastre.",
-      "La întâlnirea duhovnicească au fost prezenți: PC Arhim. Nectarie (Gherman), Prorector pentru studii al ATOM și Director al Seminarului Teologic Ortodox, PC Ierom. Dr. Macarie (Crudu), Decan al Facultății de Teologie Ortodoxă, și profesori ai acestei instituții.",
-      "În discursul său, părintele diacon Nicolae a subliniat faptul că știința aduce dovezi în sprijinul credinței.",
-      "În acest sens, părintele a relatat tinerilor că adeseori se întâlnesc conflicte între afirmaţiile credinţei și cele ale știinţei. Conflictul se învârte de obicei în jurul chestiunilor legate de originea oamenilor și a altor organisme vii, potopul biblic și/sau vârsta pământului.",
-      "Ne putem întreba de ce există acest conflict. De ce credinţa și știinţa uneori se ciocnesc? Dumnezeu este autorul Scripturii și Creatorul naturii, așa că ne-am aștepta ca cele două să fie în armonie. Pentru a răspunde la această întrebare, trebuie să analizăm sensurile credinţei și ale știinţei și modul în care se raportează una la cealaltă.",
-      "La final, părintele profesor a răspuns la diverse întrebări legate de tema prezentată.\nBiroul de presă al ATOM\n",
-    ],
-    post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452611/8-1_rw8woz.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452611/8-2_ge5mkm.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452611/8-3_b4hr7s.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452612/8-4_nvcnxo.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452612/8-5_anrydw.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452613/8-6_ep1qdb.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452614/8-7_rtdmdp.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452616/8-8_cgcwnp.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452615/8-9_pl0uvq.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452617/8-10_mqjrox.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452617/8-11_qurhvj.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452618/8-12_nzo6fi.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452619/8-13_jnzh7c.webp",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716452620/8-14_upqcfg.webp",
-    ],
-    text_subtitle: "",
-    date_created: "03-04-2024",
-  },
-  {
-    id: "664f0046c44b1cecde98334e",
-    text_title:
-      "Elevii și studenții din cadrul ATOM, desemnați la Gala Tineretului Ortodox, ediția a VIII-a",
-    slug_text: "ortodoxie",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453427/9_umhq3b.jpg",
-    description_text: [
-      "Evenimentul a avut loc în incinta Liceului Teoretic „Meșterul Manole” din satul Sălcuța, raionul Căușeni.",
-      "Printre cei mai activi tineri implicați în diverse activități pe parcursul anului, nominalizați cu diplome de către Preasfințitul Ioan, Episcop de Soroca, au fost și studenții Facultății de Teologie Ortodoxă și elevii Seminarului Teologic Ortodox „Sf. Irh. Gavriil” din cadrul Academiei de Teologie Ortodoxă din Moldova, menționați pentru aprecierea eforturilor depuse pe parcursul anului de învățământ și implicarea activă în viața școlii, a Bisericii și societății.",
-      "Biroul de presă al ATOM",
-    ],
-    post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453419/9-1_ci2esa.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453420/9-2_qau6bz.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453420/9-3_mg7bye.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453421/9-4_niuvhz.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453422/9-5_xy15d2.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453422/9-6_se3f0u.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453424/9-7_oibu0o.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453424/9-8_kjsmxl.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453426/9-9_jgeoty.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716453427/9-10_w8etcj.jpg",
-    ],
-    text_subtitle:
-      "Duminică, 18 februarie 2024, cu binecuvântarea Înaltpreasfințitului Vladimir, Mitropolit al Chișinăului și al întregii Moldove și Rector al Academiei de Teologie Ortodoxă din Moldova, s-a desfășurat Gala Tineretului Ortodox, ediția a VIII-a.",
-    date_created: "21-02-2024",
-  },
-  {
-    id: "664f06a654aabe3d5532a5de",
-    text_title:
-      "Comemorarea poetului Grigore Vieru la Cimitirul central din Chișinău",
-    slug_text: "ORTODOXIE",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455060/10_cyvhgw.jpg",
-    description_text: [
-      "În acest sens, participanții la evenimentul comemorativ au adus omagiu cu depunere de flori, după care elevii Seminarului Teologic Ortodox au recitat și au cântat versuri din opera poetului, iar elevii Școlii primare nr. 88 au venit cu un recital de poezii scrise de poetul nobleței sufletești.\nDupă încheierea evenimentului, elevii seminariști au vizitat mormintele preoților Alexandru Cristea și Alexei Mateevici, unde au meditat împreună cu dascălii lor la viața, activitatea și importanța acestor slujitori pentru istoria Bisericii și a neamului nostru.\n",
-      "Scurt istoric:\nGrigore Vieru s-a născut la 14 februarie 1935, în satul Pererâta, județul Hotin, în prezent raionul Briceni.\n",
-      "Opera sa a fost tradusă în engleză, rusă, germană, italiană, bulgară și în alte limbi. În 1988 i-a fost acordată cea mai prestigioasă distincție internațională în domeniul literaturii pentru copii – Diploma de Onoare „H. Ch. Andersen”. Poetului i-a fost acordat titlul onorific de Scriitor al Poporului și a fost decorat cu Ordinul Republicii. În 1990 a fost ales membru de onoare al Academiei Române, iar în 1993 – membru corespondent al acesteia.",
-      "S-a stins din viață la 18 ianuarie 2009, în urma unui accident rutier. Grigore Vieru a fost decorat post-mortem cu Ordinul Național „Steaua României” în grad de Mare Cruce.",
-      "În prezent, mai multe școli din R. Moldova, un bulevard din Capitală și o stradă la Iași, România, îi poartă numele.",
-      "Biroul de presă al ATOM",
-    ],
-    post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455052/10-1_l3dwke.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455052/10-2_dmqqtl.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455052/10-3_lckb8o.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455053/10-4_ni9hju.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455055/10-5_mw9mtj.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455055/10-6_xlurqk.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455056/10-7_dk51zf.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455058/10-8_sfsqkj.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716455059/10-9_vf0lwc.jpg",
-    ],
-    text_subtitle:
-      "Cu prilejul Zilei Naționale a Lecturii și Zilei comemorării poetului Grigore Vieru în Republica Moldova, miercuri, 14 februarie 2024, având binecuvântarea părintelui director al Seminarului Teologic Ortodox „Sf. Ierarh Gavriil” din Chișinău, PC arhimandrit Nectarie, Senatului Elevilor Seminarului Teologic Ortodox, în coordonare cu părintele prof. Alexandru Comendant și profesoara de Limba și literatura română, Dna Liliana Cugut, au organizat în colaborare cu Școala Primară Nr. 88 și Biblioteca Maramureș din Capitală oficierea unei panihide la mormântul poetului Grigore Vieru, care se află în Cimitirul central al Capitalei.",
-    date_created: "15-02-2024",
-  },
-  {
-    id: "664f08e654aabe3d5532a5df",
-    text_title:
-      "Sfinții Trei Ierarhi, prăznuiți la Academia de Teologie Ortodoxă, cu ocazia hramului",
-    slug_text: "ORTODOXIE",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456189/11_ahayz0.jpg",
-    description_text: [
-      "În acest sens, participanții la evenimentul comemorativ au adus omagiu cu depunere de flori, după care elevii Seminarului Teologic Ortodox au recitat și au cântat versuri din opera poetului, iar elevii Școlii primare nr. 88 au venit cu un recital de poezii scrise de poetul nobleței sufletești.\nDupă încheierea evenimentului, elevii seminariști au vizitat mormintele preoților Alexandru Cristea și Alexei Mateevici, unde au meditat împreună cu dascălii lor la viața, activitatea și importanța acestor slujitori pentru istoria Bisericii și a neamului nostru.\n",
-      "Scurt istoric:\nGrigore Vieru s-a născut la 14 februarie 1935, în satul Pererâta, județul Hotin, în prezent raionul Briceni.\n",
-      "Opera sa a fost tradusă în engleză, rusă, germană, italiană, bulgară și în alte limbi. În 1988 i-a fost acordată cea mai prestigioasă distincție internațională în domeniul literaturii pentru copii – Diploma de Onoare „H. Ch. Andersen”. Poetului i-a fost acordat titlul onorific de Scriitor al Poporului și a fost decorat cu Ordinul Republicii. În 1990 a fost ales membru de onoare al Academiei Române, iar în 1993 – membru corespondent al acesteia.",
-      "S-a stins din viață la 18 ianuarie 2009, în urma unui accident rutier. Grigore Vieru a fost decorat post-mortem cu Ordinul Național „Steaua României” în grad de Mare Cruce.",
-      "În prezent, mai multe școli din R. Moldova, un bulevard din Capitală și o stradă la Iași, România, îi poartă numele.",
-      "Biroul de presă al ATOM",
-    ],
-    post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456134/11-1_evctkn.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456135/11-2_tarzdr.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456135/11-3_zga286.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456136/11-4_y8tevu.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456137/11-5_wux1s0.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456138/11-6_tsasz4.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456139/11-7_cms0xn.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456141/11-8_l3gj0d.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456142/11-9_l6hfi2.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456143/11-10_g9zq2e.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456144/11-11_xxpmp2.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456146/11-12_wkrfjs.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456147/11-13_hvvdrg.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456147/11-14_tqx3ex.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456148/11-15_f7gfy0.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456150/11-16_aecsdw.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456151/11-17_klrabq.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456152/11-18_r7ykhk.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456153/11-19_xmfyuo.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456156/11-21_iu7ypt.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456157/11-22_ux9jun.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456157/11-23_rti85c.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456158/11-24_r8qrca.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456159/11-25_d3asym.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456161/11-26_ocveog.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456162/11-27_rwe8fq.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456162/11-28_jzoktv.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456164/11-29_d3n670.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456166/11-30_knwwdu.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456167/11-32_hpfx8f.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456167/11-31_pwpcu1.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456169/11-33_q4atyo.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456169/11-34_zjkshv.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456171/11-35_ehzgrq.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456172/11-36_datl5z.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456173/11-37_vi7nca.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456174/11-38_p9yf3k.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456176/11-39_lql5na.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456177/11-40_o9hkkx.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456178/11-41_l71c6y.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456179/11-42_y3xmob.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456180/11-43_hvbtkj.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456174/11-20_ugqpuk.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456182/11-44_k9mepc.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456183/11-45_rzgsxi.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456184/11-46_p3kven.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456186/11-47_pzpmpv.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456187/11-48_rr6vse.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716456187/11-49_x1u2cd.jpg",
-    ],
-    text_subtitle:
-      "De sărbătoarea Sfinților Trei Ierarhi, ocrotitorii învățământului teologic, Școlile teologice din Moldova: Facultatea de Teologie Ortodoxă și Seminarul Teologic Ortodox „Sf. Irh. Gavriil” din Chișinău, împreună cu biserica „Sfinții Trei Ierarhi” din incinta Academiei de Teologie Ortodoxă din Moldova, și-au celebrat hramul.",
-    date_created: "12-02-2024",
-  },
-  {
-    id: "664f0f16eca0f1626f88d943",
-    text_title: "ÎNTRUNIRE DE DIALOG INTER-RELIGIOS",
-    slug_text: "ORTODOXIE",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716457790/12_sy7uaz.jpg",
-    description_text: [
-      "Studenţii Academiei de Teologie Ortodoxă, împreună cu pr. prof. Octavian Solomon au participat la un dialog inter-religios, fiind găzduiți de reprezentanții Centrului Islamic din Chişinău.",
-      "După o prezentare scurtă făcută de Sergiu Sochircă, președintele Ligii Islamice din Moldova, s-a trecut la abordarea tematicii de pe ordinea de zi a discuțiilor.",
-      "În acest sens, lectorul în studii islamice, dl Ismail Abdelwahab a tratat subiecte ca: profetismul din Islam şi profeții și trimișii lui Allah (Adam, Noe, Avraam, David, Iosif, Moise, Iisus, Muhammad). Scopul profeților și a trimișilor a fost de a-i readuce pe oameni la adorarea Singurului Dumnezeu. A vorbit şi despre cartea fundamentală a Islamului, Coranul şi forma de revelare a acestei cărţi.",
-      "Lectorul sus-menționat s-a oprit în mod special la explicarea celor șase stâlpi de credință din Islam: Credința în Allah; Credința în îngeri; Credința în cărțile revelate; Credința în profeți; Credința în Ziua Judecății; Credința în predestinare. De asemenea, referindu-se la viața credinciosului musulman, lectorul a explicat practica credincioșilor care este legată de mărturisirea de credință, de cele 5 rugăciuni zilnice, de danie, de postul anual, de pelerinaj și de conceptul de adorare.",
-      "În discuții a fost atins și un alt aspect, mult mai sensibil, legat de conflictul israeliteano-palestinian.",
-      "Din partea Academiei de Teologie Ortodoxă din Chişinău, pr. prof. Octavian Solomon a mulțumit Ligii Islamice din Republica Moldova pentru conferinţa susţinută şi pentru primirea studenţilor teologi.",
-      "Cu un respect deosebit, și studenţii participanți la această dezbatere, au mulțumit comunităţii islamice pentru prezentarea oferită de lectorul în ştiinţele islamice, pregătit la un nivel foarte înalt, pe care l-au propus pentru conferenţiere. Nutrim speranţa că această conferinţă de informare nu va fi ultima şi vom demara şi alte asemenea conferinţe de dezbatere în viitor.",
-      "A consemnat: Pr. Prof. Octavian Solomon, ATOM",
-    ],
-    post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716457781/12-1_pegayj.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716457781/12-2_usqij2.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716457783/12-3_gusz8u.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716457784/12-4_c6bvv2.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716457786/12-5_vcoaux.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716457789/12-6_q1nhx7.jpg",
-    ],
-    text_subtitle:
-      "A fost prezentată o viziune completă asupra islamului de către lectorul Ismail Abdelwahab, conferențiarul unei întruniri inter-religioase din data de 31 ianuarie 2024.",
-    date_created: "5-02-2024",
-  },
-  {
-    id: "664f22fc01bb8d9854d87c03",
-    text_title:
-      "La Seminarul Teologic Ortodox „Sf. Ierarh Gavriil” din Chișinău au avut loc examenele de stat la disciplinele teologice",
-    slug_text: "ORTODOXIE",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462260/13_psej4g.jpg",
-    description_text: [
-      "Examenele au fost susținute de elevii seminariști ai clasei a XII-a, promoția 2021-2024.",
-      "În calitate de examinatori au fost: PC Arhim. Nectarie (Gherman), Director al Seminarului Teologic Ortodox, Dna Rodica Slivca, Director-adjunct învățământ al acestei instituții și cadrele didactice titulare la cele trei discipline teologice.",
-      "În urma susținerii examenelor, majoritatea elevilor seminariști au obținut rezultate remarcabile și au dat dovadă de o pregătire corespunzătoare cerințelor stabilite.",
-      "Biroul de presă al ATOM",
-    ],
-    post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462224/13-1_me07ov.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462224/13-2_urqs1s.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462225/13-3_auzl3k.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462228/13-4_iblyfo.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462229/13-5_rfftgy.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462231/13-6_q2chi3.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462233/13-7_c3ojzt.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462234/13-8_n1ixby.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462236/13-9_zhnxr8.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462239/13-10_wzoikj.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462239/13-11_lrzpem.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462240/13-12_q2flal.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462244/13-13_lhaan5.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462244/13-14_krhecl.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462246/13-15_nezv8c.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462249/13-16_og3mq7.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462250/13-17_bcsotb.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462251/13-18_kog5e1.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462254/13-19_xykznw.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462255/13-20_jnsux1.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462256/13-21_twd7b2.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462259/13-22_ptrtlr.jpg",
-    ],
-    text_subtitle:
-      "Cu binecuvântarea Directorului Seminarului Teologic Ortodox „Sf. Irh. Gavriil” din Chișinău, Arhim. Nectarie (Gherman), în perioada 22-29 ianuarie 2024, au avut loc examenele de stat la trei discipline teologice: Studiul Noului Testament (Profesor: Prot. Alexandru Comendant), Studiul Vechiului Testament (Profesor: Ierom. Dr. Macarie Crudu) și Tipic (Profesor: Prot. Victor Ceresău).",
-    date_created: "30-01-2024",
-  },
-  {
-    id: "664f252401bb8d9854d87c04",
-    text_title:
-      "La Seminarul Teologic Ortodox a avut loc tradiționalul concert de colinde și urături",
-    slug_text: "ORTODOXIE",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462925/14_olsgxm.jpg",
-    description_text: [
-      "Sărbătorile de iarnă sunt tot mai aproape de noi, prin aceasta îndemnându-ne să fim pregătiți cum se cuvine de marea sărbătoare a Nașterii Domnului. Postul Nașterii Domnului a oferit posibilitatea fiecăruia să ne manifestăm mai mult decât de obicei, prin fapte bune, milostenie, iertare, compătimire, întrajutorare, dar și smerenie și pocăință, ca să putem cu credință și lumină în suflet să devenim sălaș al pruncului Iisus.",
-      "Sărbătorile de iarnă ne încântă prin frumoasele tradiţii păstrate de poporul nostru, acestea fiind un semn al faptului că poporul nostru din profunda dragoste faţă de Dumnezeu a căutat să transpună în obiceiuri şi tradiţii luminoasa sărbătoare a Naşterii Domnului.",
-      "În acest sent, în incinta Seminarului Teologic Ortodox „Sf. Irh. Gavriil” din Chișinău, cu binecuvântarea PC Arhim. Nectarie (Gherman), Prorectorul Academiei de Teologie Ortodoxă din Moldova și Director al Seminarului, a avut loc tradiționalul concert „Florile Dalbe”.",
-      "În cadrul evenimentului destinat Sărbătorilor de iarnă, au participat elevii claselor a X – XII-a, cu un bogat program de colinde, urări și scenete creștine. De asemenea, sărbătoarea a culminat cu un recital de colinde, interpretate de Corul Seminarului Teologic Ortodox, condus de Domnul Dimitrian Albot, care a bucurat sufletele celor prezenți.",
-      "Dragostea de frumos, credinţa şi speranţa în viitorul luminat determină pe om să se manifeste mulţumitor lui Dumnezeu pentru toate darurile primite, şi mai ales, pentru Marele Dar, oferit din iubire jervelnică întregii omeniri – Mântuitorul Iisus Hristos.  Acest prilej de bucurie şi mulţumire a fost împărtăşit de către conducerea Școlilor Teologice, cadrele didactice, colaboratori, elevi și studenți. ",
-      "La final, PC Arhimandrit Nectarie a rostit un mesaj de felicitare și recunoștință elevilor pentru implicare și activitate sârguincioasă, profesorilor și colaboratorilor pentru munca depusă și profesionalismul de care au dat dovadă până la această etapă, pentru a asigura un proces de studii calitativ. La final, elevii cu cea mai înaltă reușită, au fost premiați cu diplome de recunoștință și premii bănești.",
-      "Cu un cuvânt de felicare a venit și doamna Rodica Slivca, director adjunct al Seminarului, dorindu-le elevilor ca sărbătorile de iarnă să le aducă numai bucurii și împliniri statornice, multe succese și realizări frumoase în anul care vine.",
-      "Elevii și angajații instituției au primit cadouri din partea conducerii Academiei de Teologie Ortodoxă. ",
-    ],
-    post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462871/14-1_vyj5dm.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462872/14-2_oxe04c.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462875/14-3_d24zah.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462877/14-4_ccffgp.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462880/14-5_skqrjc.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462881/14-6_dsqnv7.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462883/14-7_ydk5eb.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462885/14-8_aqnpuy.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462888/14-9_umqmdl.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462890/14-10_wejptd.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462892/14-11_ngkuin.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462894/14-12_ksh4hg.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462896/14-13_csatrs.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462899/14-14_igasrt.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462900/14-15_rsgcru.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462903/14-16_lkfoax.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462904/14-17_usbery.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462906/14-18_ngpy9l.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462908/14-19_jm0sxe.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462910/14-20_qbbvjt.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462912/14-21_dempin.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462914/14-22_xmo4zq.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462916/14-23_wzog0h.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462919/14-24_pn5vfh.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462920/14-25_qlocjo.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462922/14-26_laviyr.jpg",
-    ],
-    text_subtitle:
-      "Anul Nou aduce noi începuturi, experiențe și trăiri. Suntem reconoscători pentru binecuvântările anului care a trecut și optimiști pentru a porni spre viitor cu noi forțe. La 21 decembrie 2023, Seminarul Teologic Ortodox din Chișinău a găzduit mai multe cete de colindători, care au adus vestea Nașterii Domnului, prin frumoasele colinde și urări.",
-    date_created: "22-12-2023",
-  },
-  {
-    id: "664f27e05a908dd374d938b9",
-    text_title:
-      "Preasfințitul Filaret de Căpriana a vizitat Academia de Teologie Ortodoxă din Moldova",
-    slug_text: "ORTODOXIE",
-    post_img:
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463831/15_ycz9z1.jpg",
-    description_text: [
-      "Ierarhul a fost întâmpinat de către prorectorul Academiei, PC arhimandrit Nectarie (Gherman), decanul Facultății de Teologie Ortodoxă, PC Ieromonah Macarie (Crudu), corpul didactic, elevii și studenții ce își fac studiile în această instituție teologică.",
-      "Academia de Teologie Ortodoxă din Moldova a avut deosebita binecuvântare întrucât a primit în dar din partea PS Filaret Icoana cu părticele din Moaștele Sfântului Ierarh Gavriil Bănulescu-Bodoni.",
-      "Cu acest prilej, în capela Sfinții Trei Ierarhi a instituției a fost oficiat un tedeum de sănătate și sporire duhovnicească a elevilor Seminarului și studenților Academiei, după care, în sala festivă a academiei, Preasfințitul Filaret a conferențiat în fața profesorilor și a tinerilor teologi, elogiind viața și activitatea primului ierarh al Mitropoliei, Sfântul Ierarh Gavriil Bănulescu-Bodoni, Mitropolitul Chișinăului și Hotinului.",
-      "La finalul întâlnirii duhovnicești, cei prezenți au primit în dar din partea ierarhului câte o cărțulie cu Acatistul și viața Sfântului Ierarh Gavriil.",
-      "Biroul de presă al ATOM",
-    ],
-    post_img_collection: [
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463774/15-1_ush6qi.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716462872/14-2_oxe04c.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463776/15-2_ybppjo.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463778/15-3_suiipa.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463779/15-4_krnugx.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463783/15-5_zjty7p.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463785/15-6_cr04xp.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463788/15-7_tif76i.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463790/15-8_ho5qxs.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463791/15-9_bhkccn.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463795/15-10_hcvqgs.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463798/15-11_esnbas.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463800/15-12_ww2cqn.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463803/15-13_tlpfnq.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463805/15-14_pfbadl.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463807/15-15_zgnlvj.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463809/15-16_b0rbae.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463814/15-17_nvxcya.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463815/15-18_dlbwjz.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463820/15-19_pe3xyh.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463821/15-20_rjtzju.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463824/15-21_whqopx.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463825/15-22_w3rmcz.jpg",
-      "https://res.cloudinary.com/dkkozauci/image/upload/v1716463829/15-23_lh7hvj.jpg",
-    ],
-    text_subtitle:
-      "Cu binecuvântarea Întâistătătorului Bisericii Ortodoxe din Moldova, Înaltpreasfințitului Mitropolit Vladimir, miercuri, 20 decembrie 2023, episcopul-vicar, Preasfințitul Filaret de Căpriana, a vizitat Academia de Teologie Ortodoxă din Moldova.",
-    date_created: "21-12-2023",
-  },
+];
+
+export const collection = [
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788200/home-posts/3-2_qwxb5g.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788200/home-posts/3-3_b0zfsi.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788201/home-posts/3-4_dmiuq5.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788201/home-posts/3-5_atl6jo.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788202/home-posts/3-6_q8vgpj.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788206/home-posts/5-1_x2jhz2.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788207/home-posts/5-2_awckxa.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788207/home-posts/5-3_ccgig6.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788208/home-posts/5-4_mu99qr.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788209/home-posts/6-1_s15uu6.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788210/home-posts/6-2_s9yc2f.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788210/home-posts/6-3_xxp0qz.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788211/home-posts/6-4_jpdmlz.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788212/home-posts/6-5_nciaae.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788212/home-posts/6-6_xiy8gr.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718363589/6-7_jekjua.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788214/home-posts/6-8_qkkhca.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788215/home-posts/6-9_f4cazh.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788215/home-posts/6-10_padeuv.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718363595/6-11_buswjc.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788218/home-posts/6-13_v6njxv.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788219/home-posts/6-14_kx5fgg.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788220/home-posts/6-15_pjb2f0.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718788221/home-posts/6-16_rw2ljy.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-1_d9jx3r_leh27g.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-2_goh9ik_kcgj15.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-3_n5oi6a_gv4qcj.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-4_novf0p_o0wxb3.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-5_fdwebl_xpy9o2.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-6_ft0vfl_rwqwv7.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-7_dekw90_culhqr.webp",
+      "https://res.cloudinary.com/dkkozauci/image/upload/v1718789052/home-posts/7-8_jyeu3v_kplfp2.webp",
 ];

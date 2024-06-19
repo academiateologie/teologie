@@ -1,0 +1,30 @@
+
+.studenti {
+    @apply h-full w-full relative;
+}
+.studenti__top_inner {
+    @apply flex flex-col justify-between h-full pt-[80rem] pb-[34rem];
+}
+.studenti__top_title {
+    @apply text-[30rem] text-[#66220f] font-bold leading-[133%] mt-[66rem] text-center;
+}
+.studenti__top_subtitle {
+    @apply text-[18rem] text-[#272b37] font-semibold leading-[139%] mt-[52rem] text-left;
+}
+.studenti__top_tables {
+    @apply grid grid-cols-2 gap-[80rem] mt-[52rem];
+}
+.studenti__table_left__title,
+.studenti__table_right__title {
+    @apply text-[#272b37] text-[22rem] font-bold uppercase;
+}
+.container {
+    @apply w-[1200rem] mx-auto;
+
+    @media screen and (max-width: 600px) {
+        @apply w-full px-[15rem];
+    }
+}
+.studenti__bottom_inner {
+    
+}

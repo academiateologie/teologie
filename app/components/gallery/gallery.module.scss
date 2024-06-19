@@ -1,11 +1,15 @@
 .gallery {
-    @apply w-full h-full bg-[url('../../../public/static/gallery/gallery-bg.png')] bg-cover bg-center;
+    @apply w-full h-full bg-[url('../../../public/static/shared/pattern-mitropolia.png')] bg-cover bg-center;
+    // background: rgba(244 142 151 / 7%);
+    @media screen and (max-width: 600px) {
+        @apply pt-[16rem];
+    }
 }
 .container {
     @apply w-[1200rem] mx-auto;
 
     @media screen and (max-width: 600px) {
-        @apply w-full;
+        @apply w-full px-[15rem];
     }
 }
 .gallery__wrapper {
@@ -14,8 +18,6 @@
     @media screen and (max-width: 600px) {
         @apply hidden;
     }
-}
-.gallery__foto {
 }
 .foto__top, 
 .video__top {
@@ -33,6 +35,10 @@
 .video__view_button {
     @apply text-[17rem] text-[#66220F] font-semibold leading-none flex justify-center items-center border-[1rem] border-[#66220F] w-[142rem] h-[50rem] mt-[-10rem] uppercase;
 
+     &:hover {
+        background: rgba(206, 19, 36, 0.1);
+    }
+
     @media screen and (max-width: 600px) {
         @apply hidden;        
     }
@@ -41,20 +47,15 @@
     @apply hidden;        
 
     @media screen and (max-width: 600px) {
-           @apply text-[22rem] text-[#66220F] font-semibold leading-none flex justify-center items-center border-[2rem] border-[#66220F] w-[94%] h-[60rem] mt-[-30rem] mb-[40rem] mx-auto uppercase;
+           @apply text-[22rem] text-[#66220F] font-semibold leading-none flex justify-center items-center border-[2rem] border-[#66220F] w-full h-[60rem] mb-[40rem] mx-auto uppercase;
     }
-}
-.foto__inner {
-}
-.foto__item {
-}
-.gallery__video {
-}
-.video__top {
 }
 .foto__inner,
 .video__inner {
     @apply flex gap-[26rem] mt-[64rem] relative z-0;
+}
+.video__inner {
+    @apply w-[425rem] h-[220rem];
 }
 .video__item {
     @apply  w-[276rem] h-[220rem];
@@ -69,11 +70,4 @@
     @media screen and (max-width: 600px) {
         @apply block relative;
     }
-}
-.navigate__counter {
-    @apply flex justify-center items-center absolute z-[3] top-[101%] -translate-y-[101%] left-[240rem];
-
-    @media screen and (max-width: 600px) {
-      @apply left-[190rem] top-[85%] -translate-y-[85%];
-     }
 }

@@ -2,11 +2,15 @@
     @apply block w-full mx-auto mt-[72rem];
 
     @media screen and (max-width: 600px) {
-     @apply w-screen mt-[30rem] ml-[20rem];   
+     @apply mt-[30rem] w-full;   
     }
 }
 .posts__gallery {
     @apply w-full flex gap-[45rem] pb-[80rem];
+
+    @media screen and (max-width: 600px) {
+        @apply pb-[30rem];
+    }
 }
 .publications__post__item {
     @apply flex flex-col w-[370rem] h-auto bg-white relative top-0 left-0 z-0;

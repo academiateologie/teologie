@@ -1,22 +1,13 @@
 .about {
-    @apply w-full;
-    background: rgba(206, 19, 36, 0.1);
+    @apply w-full h-full bg-[url('../../../public/static/shared/pattern-mitropolia.png')] bg-center;
     font-family: 'Myriad Pro';
 }
 .about__wrapper {
     @apply flex justify-center gap-[90rem];
 
     @media screen and (max-width: 600px) {
-        @apply flex flex-col gap-0 px-[20rem] pb-[20rem];
+        @apply flex flex-col gap-0 px-[15rem] pb-[20rem];
     }
-}
-.about__image {
-    @apply w-[603rem] h-[640rem] relative bg-[url('../../../public/static/about/about-img.png')] bg-cover bg-center bg-no-repeat;
-
-    @media screen and (max-width: 600px) {
-        @apply w-0 h-0;
-    }
-
 }
 .about__description {
     @apply w-[630rem] pt-[90rem];
@@ -40,9 +31,17 @@
     }
 }
 .about__button {
-    @apply w-[212rem] text-[17rem] text-[#66220F] font-semibold leading-none py-[16rem] uppercase flex justify-center mt-[40rem] border-[1px] border-[#66220F] tablet:hover:bg-white/50 transition-all duration-200;
+    @apply w-[212rem] text-[17rem] text-[#66220F] font-semibold leading-none py-[16rem] uppercase flex justify-center mt-[40rem] border-[1px] border-[#66220F] transition-all duration-200;
+
+    &:hover {
+        background: rgba(206, 19, 36, 0.1);
+    }
 
     @media screen and (max-width: 600px) {
-        @apply bg-[#66220F] text-white font-normal w-[90vw];
+        @apply bg-[#66220F] text-[22rem] text-white font-normal w-full py-[18rem];
+
+        &:hover {
+        background: transparent;
+    }
     }
 }

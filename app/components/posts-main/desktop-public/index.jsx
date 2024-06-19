@@ -1,15 +1,14 @@
 "use client"
 import React from 'react'
 import styles from "./desktop.public.module.scss"
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { posts } from "../../../db";
+import { h__posts } from "../../../db";
+// import { posts } from "../../../db";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Navigation,
   Pagination,
-  Scrollbar,
-  A11y,
-  Keyboard,
   Grid
 } from "swiper/modules";
 
@@ -19,6 +18,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/grid";
 import Link from 'next/link';
+import { relative } from 'path';
 
 const Index = () => {
     const [isHover, setIsHover] = React.useState(false);
@@ -36,7 +36,7 @@ const Index = () => {
       type: "fraction",
       renderFraction: function (currentClass, totalClass) {
         return (
-          '<span class="' + currentClass + '">0</span>' +
+          '<span class="' + currentClass + '"></span>' +
           " / " 
           + '<span class="' + totalClass + '"></span>'
         );
@@ -74,10 +74,10 @@ const Index = () => {
           scrollbar={false}
           pagination={pagination}
           navigation={true}
-          modules={[Keyboard, Scrollbar, Navigation, Pagination, Grid]}
-          className="mt-0 pl-[20rem] tablet:w-full tablet:mt-[40rem] h-[540rem] tablet:h-[1600rem] tablet:pb-[40rem] relative bg-transparent"
+          modules={[Navigation, Pagination, Grid]}
+          className="mt-0 pl-[20rem] tablet:w-full tablet:mt-[40rem] h-[540rem] tablet:h-auto tablet:pb-[40rem] relative bg-transparent"
         >
-          {posts.map((post) => (
+          {h__posts.map((post) => (
             <SwiperSlide key={post.id}>
               <Link href={`/publicare/${post.id}`}>
                 <motion.div
@@ -96,16 +96,22 @@ const Index = () => {
                     {isHover && onButton === post.id && (
                       <span className={styles.on__hover_blur}></span>
                     )}
-                    <img
+
+                    <Image
+                      className="w-[160rem] h-[130rem] tablet:w-full tablet:h-[256rem] flex"
+                      alt={post.post_img}
+                      width="160"
+                      height="130"
                       src={post.post_img}
-                      className="w-[160rem] h-[130rem] tablet:w-full tablet:h-[256rem]"
-                      alt={post.text_title}
-                    ></img>
+                      sizes="(min-width: 600px) 50vw, 100vw"
+                      priority="true"
+                      quality={100}
+                    />
                     <div className={styles.post__description}>
                       <span className={styles.post__slug}>
                         {post.slug_text}
                       </span>
-                      <p className={styles.post__text}>{post.text_subtitle}</p>
+                      <p className={styles.post__text}>{post.text_title}</p>
                       <p className={styles.post__date_created}>
                         {post.date_created}
                       </p>

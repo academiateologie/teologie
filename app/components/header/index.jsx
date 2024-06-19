@@ -11,27 +11,66 @@ import CompaseIcon from "./svg/compase-icon";
 import EmailIcon from "./svg/email-icon";
 import HeaderLogo from "./svg/logo";
 import HeaderGerb from "./svg/gerb";
-import ItemSelector from "./svg/item-selector"
+import ItemSelector from "./svg/item-selector-white";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const headerTopItems = [
-  { id: 1, itemName: "Pagina principală", itemLink: "/", itemSelector: "" },
+  {
+    id: 1,
+    itemName: "Pagina principală",
+    itemLink: "/",
+    itemSelector: "",
+    submenuItems: [],
+  },
   {
     id: 2,
     itemName: "Facultate",
-    itemLink: "/",
+    itemLink: "",
     itemSelector: <ItemSelector />,
+    submenuItems: [{ id: 21, submenuItem: "Corp Didactic ATOM" }],
   },
-  { id: 3, itemName: "Seminarul", itemLink: "/", itemSelector: "" },
-  { id: 4, itemName: "Studenţi", itemLink: "studenti", itemSelector: "" },
-  { id: 5, itemName: "Admiterea 2023-2024", itemLink: "/", itemSelector: "" },
+  {
+    id: 3,
+    itemName: "Seminarul",
+    itemLink: "/",
+    itemSelector: "",
+    submenuItems: [],
+  },
+  {
+    id: 4,
+    itemName: "Studenţi",
+    itemLink: "/",
+    itemSelector: "",
+    submenuItems: [],
+  },
+  {
+    id: 5,
+    itemName: "Admiterea 2023-2024",
+    itemLink: "/",
+    itemSelector: "",
+    submenuItems: [],
+  },
   {
     id: 6,
     itemName: "Panou Informativ",
-    itemLink: "/",
+    itemLink: "",
     itemSelector: <ItemSelector />,
+    submenuItems: [
+      { id: 61, submenuItem: "Pentru Studenţi" },
+      { id: 62, submenuItem: "Pentru Profesori" },
+      { id: 63, submenuItem: "MASTERAT" },
+      { id: 64, submenuItem: "Licenţa" },
+    ],
   },
-  { id: 7, itemName: "Biblioteca", itemLink: "/", itemSelector: "" },
+  {
+    id: 7,
+    itemName: "Biblioteca",
+    itemLink: "/",
+    itemSelector: "",
+    submenuItems: [],
+  },
 ];
 
 const headerBottomItems = [
@@ -39,68 +78,122 @@ const headerBottomItems = [
     id: 8,
     itemName: "Republica Moldova, mun. Chișinău, str. Izmail 46",
     itemNameMob: "R. Moldova, mun. Chișinău, str. Izmail 46",
-    itemLink: "/",
+    itemLink: "https://maps.app.goo.gl/WBCY6XKuabaw2e1b8",
     itemIcon: <CompaseIcon />,
   },
   {
     id: 9,
     itemName: "+373 (022) 54-28-70",
     itemNameMob: "",
-    itemLink: " +373022542870",
+    itemLink: "tel:+373022542870",
     itemIcon: <PhoneIcon />,
   },
   {
     id: 10,
     itemName: " teologie.ortodoxa@gmail.com",
     itemNameMob: "",
-    itemLink: "/",
+    itemLink: "mailto:teologie.ortodoxa@gmail.com",
     itemIcon: <EmailIcon />,
   },
 ];
 
 const Index = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
-  const [selectorActive, setSelectorActive] = React.useState(false)
-  const [isItemActive, setIsItemActive] = React.useState(null)
+  const isDesktop = useMediaQuery({
+    query: "(min-width: 600px)",
+  });
 
-  React.useEffect(()=>{
-    if(isMenuOpen) {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [selectorActive, setSelectorActive] = React.useState(false);
+  const [isItemActive, setIsItemActive] = React.useState(null);
+  const [isSubmenuMobileActive, setIsSubmenuMobileActive] =
+    React.useState(false);
+  const [isOpenSubmenuMobile, setIsOpenSubmenuMobile] = React.useState(null);
+
+  React.useEffect(() => {
+    if (isMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-  }, [isMenuOpen])
+  }, [isMenuOpen]);
 
   return (
     <section className="flex flex-col w-full relative">
       {isMenuOpen && (
         <div
-          className="fixed tablet:hidden top-0 left-0 z-[3] bg-stone-600/50 backdrop-blur-sm w-full h-full"
+          className="fixed tablet:hidden top-0 left-0 z-[3] bg-stone-600/50 backdrop-blur-sm w-full h-[100svh]"
           onClick={() => {
             setIsMenuOpen(false);
           }}
         >
           <div
-            className="flex flex-col mt-[300rem] w-full h-auto bg-white"
+            className="flex flex-col w-full h-auto bg-white absolute top-[50%] -translate-y-[50%]"
             onClick={(e) => {
               e.stopPropagation();
             }}
           >
             {headerTopItems.map((item) => (
-              <Link
-                href={item.itemLink}
+              <motion.div
                 key={item.id}
-                className="relative flex justify-between h-[48rem] items-center pl-[22rem] pr-[40rem] after:content-[''] after:absolute after:top-0 after:left-[6rem] after:w-[96%] after:h-[2rem] after:bg-[#e9e9e9]"
-                onClick={()=>{setSelectorActive(!selectorActive)}}
+                onTap={() => {
+                  setIsSubmenuMobileActive(!isSubmenuMobileActive);
+                  setIsOpenSubmenuMobile(item.id);
+                }}
               >
-                <span className="text-[18rem] text-[#272b37] inline-flex font-semibold leading-none uppercase">
-                  {item.itemName}
-                </span>
-                <span className={selectorActive || item.id || item.itemSelector === ItemSelector ? "rotate-180" : "w-[10rem] h-[8rem]"}>{item.itemSelector}</span>
-              </Link>
+                <Link
+                  href={item.itemLink}
+                  className="relative flex justify-between h-[48rem] w-full items-center pl-[22rem] pr-[40rem] after:content-[''] after:absolute after:top-0 after:left-[6rem] after:w-[96%] after:h-[2rem] after:bg-[#e9e9e9]"
+                >
+                  <span className="flex justify-between items-center w-full">
+                    <span className="text-[18rem] text-[#272b37] inline-flex font-semibold leading-none uppercase">
+                      {item.itemName}
+                    </span>
+                    <motion.span
+                      animate={{
+                        rotate:
+                          isSubmenuMobileActive &&
+                          isOpenSubmenuMobile === item.id
+                            ? 180
+                            : 0,
+                      }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {item.itemSelector}
+                    </motion.span>
+                  </span>
+                </Link>
+                {isOpenSubmenuMobile === item.id && isSubmenuMobileActive && (
+                  <motion.span
+                    className="relative bottom-0 w-full flex flex-col font-semibold leading-none uppercase pr-[40rem]"
+                    initial={{ height: 0, opacity: 0, right: -300 }}
+                    animate={{
+                      height: "auto",
+                      opacity: 1,
+                      right: 0,
+                    }}
+                    transition={{
+                      ease: "easeOut",
+                      duration: 1,
+                    }}
+                  >
+                    {item.submenuItems.map((si, idx) => (
+                      <motion.span
+                        key={idx}
+                        className="flex justify-end text-[18rem] text-[#272b37] w-full py-[11rem] transition-all duration-150"
+                        initial={{ right: 300 }}
+                        animate={{
+                          right: 0,
+                        }}
+                      >
+                        {si.submenuItem}
+                      </motion.span>
+                    ))}
+                  </motion.span>
+                )}
+              </motion.div>
             ))}
             <Link
-              href={"/"}
+              href={"https://www.facebook.com/Teologie.MD"}
               className="relative flex justify-between h-[48rem] items-center after:content-[''] after:absolute after:top-0 after:left-[6rem] after:w-[96%] after:h-[2rem] after:bg-[#e9e9e9]"
             >
               <svg
@@ -121,27 +214,74 @@ const Index = () => {
 
       <header className={styles.header}>
         <div className={styles.header__wrapper}>
-          <span className={styles.header__top_gradient}></span>
+          <div
+            className={styles.header__wrapper_dark}
+            onClick={() => {
+              setSelectorActive(!selectorActive);
+              setIsItemActive(null);
+            }}
+          />
+          <div
+            className={styles.header__top_gradient}
+            onClick={() => {
+              setSelectorActive(!selectorActive);
+              setIsItemActive(null);
+            }}
+          />
           <span className={styles.header__bottom_gradient}></span>
           <div className={styles.header__top}>
-            <HeaderGerb />
+            <Link href="/">
+              <HeaderGerb />
+            </Link>
 
             <ul className={styles.top__items}>
-              {headerTopItems.map((item) => (
-                <li key={item.id} className={styles.top__item}>
-                  <Link
-                    href={`/${item.itemLink}`}
-                    className={styles.item__text}
+              {headerTopItems.map((item, idx) => (
+                <Link key={idx} href={`/${item.itemLink}`} className="relative">
+                  <motion.li
+                    className={styles.top__item}
+                    onHoverStart={() => {
+                      setSelectorActive(!selectorActive);
+                      setIsItemActive(item.id);
+                    }}
                   >
-                    {item.itemName}
-                  </Link>{" "}
-                  <span className={styles.item__selector}>
-                    {item.itemSelector}
-                  </span>
-                </li>
+                    <span className={styles.item__text}>{item.itemName}</span>
+                    {isItemActive === item.id ? (
+                      <span className={styles.item__selector}>
+                        {item.itemSelector}
+                      </span>
+                    ) : (
+                      <span className={styles.item__selector_rotate}>
+                        {item.itemSelector}
+                      </span>
+                    )}
+                  </motion.li>
+                  {item.id === isItemActive && (
+                    <span
+                      className={styles.top__item_menu}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
+                    >
+                      {item.submenuItems.map((it) => (
+                        <li
+                          key={it.id}
+                          className="text-[10rem] pl-[11rem] w-[100%] hover:cursor-pointer py-[11rem] relative hover:bg-[#2E2914]"
+                        >
+                          {isDesktop && it.id !== 61 && it.id !== 21 && (
+                            <span className={styles.separate__line}></span>
+                          )}
+                          {it.submenuItem}
+                        </li>
+                      ))}
+                    </span>
+                  )}
+                </Link>
               ))}
             </ul>
-            <HeaderLogo />
+
+            <Link href="/">
+              <HeaderLogo />
+            </Link>
 
             <button
               type="button"
@@ -152,7 +292,9 @@ const Index = () => {
             </button>
           </div>
 
-          <h1 className={styles.header__title}>
+          <h1
+            className={styles.header__title}
+          >
             <BirdTop />
             <TopLineDecor />
             Academia <br />
@@ -164,17 +306,21 @@ const Index = () => {
           </h1>
 
           <div className={styles.header__bottom}>
-            <ul className={styles.bottom__items}>
+            <div className={styles.bottom__items}>
               {headerBottomItems.map((item) => (
-                <li key={item.id} className={styles.bottom__item}>
+                <a
+                  key={item.id}
+                  href={item.itemLink}
+                  className={styles.bottom__item}
+                >
                   <span className={styles.item__icon}>{item.itemIcon}</span>
                   <span className={styles.item__text}>{item.itemName}</span>
                   <span className={styles.item__text_mob}>
                     {item.itemNameMob}
                   </span>
-                </li>
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </header>

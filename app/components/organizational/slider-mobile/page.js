@@ -41,7 +41,7 @@ const persons = [
     personImage: "/static/about/person-about/person-about-3.webp",
   },
   {
-     id: 3,
+     id: 4,
     personName: "Ierom. Macarie (Crudu)",
     personDescription:
       "Decan al Facultății de Teologie Ortodoxă",
@@ -52,6 +52,23 @@ const persons = [
 export default function SliderMobile() {
   const [isHover, setIsHover] = React.useState(false);
   const [onButton, setOnButton] = React.useState(null);
+
+   const pagination = {
+     clickable: false,
+     type: "fraction",
+     renderFraction: function (currentClass, totalClass) {
+       return (
+         '<span class="' +
+         currentClass +
+         '"></span>' +
+         " / " +
+         '<span class="' +
+         totalClass +
+         '"></span>'
+       );
+     },
+   };
+
   return (
     <div className={styles.publications__posts}>
       <div className={styles.posts__gallery}>
@@ -66,7 +83,7 @@ export default function SliderMobile() {
           }}
           scrollbar={true}
           navigation={true}
-          pagination={false}
+          pagination={pagination}
           modules={[Keyboard, Scrollbar, Navigation, Pagination]}
           className="mt-0 posts h-[660rem] w-full relative bg-transparent"
         >
@@ -89,13 +106,13 @@ export default function SliderMobile() {
               </div>
             </SwiperSlide>
           ))}
-          <div className={styles.navigate__counter}>
+          {/* <div className={styles.navigate__counter}>
             <span className={styles.counter__all_items}>0{persons.length}</span>
             <span className="text-[#CF4A47] text-[14rem] font-bold mx-[4rem]">
               /
             </span>
             <span className={styles.counter__current_item}> 04</span>
-          </div>
+          </div> */}
         </Swiper>
       </div>
     </div>

@@ -1,0 +1,72 @@
+.publications__posts {
+    @apply block w-full mx-auto mt-[72rem];
+
+    @media screen and (max-width: 600px) {
+     @apply mt-[30rem] w-full;   
+    }
+}
+.posts__gallery {
+    @apply w-full flex gap-[45rem] pb-[80rem];
+
+    @media screen and (max-width: 600px) {
+        @apply pb-[30rem];
+    }
+}
+.publications__post__item {
+    @apply flex flex-col w-[370rem] h-auto bg-white relative top-0 left-0 z-0;
+    // box-shadow: 0rem 10rem 30rem 0rem rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        box-shadow: 0rem 2rem 4rem 0rem rgba(0, 0, 0, 0.3);
+        transition: all ease-in 5ms;
+    }
+}
+.post__image {
+    @apply relative z-0;
+}
+.post__description {
+    @apply px-[26rem] pb-[28rem] h-[198rem];
+}
+.post__slug {
+    @apply inline-block bg-[#F6DCDA] text-[#CF4A47] text-[12rem] font-bold uppercase py-[5rem] px-[8rem] mt-[23rem];
+}
+.post__text {
+    @apply text-[#272B37] text-[20rem] leading-[24rem] font-semibold mt-[16rem];
+
+    display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 3; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+}
+.post__date_created {
+    @apply text-[12rem] text-[#808080] leading-none font-bold mt-[30rem] relative top-0 left-0 z-0;
+
+    &::after {
+        @apply content-[''] absolute top-[-14rem] left-0 z-[1] inline-flex h-[1rem] w-[51rem] bg-[#D9D9D9];
+    }
+}
+
+.on__hover_button {
+    @apply w-[114rem] h-[50rem] text-[17rem] text-white absolute top-[104rem] left-[50%] -translate-x-[50%] z-[2] border-[1rem] border-[#fff] hover:cursor-default;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+// ===== gallery navigate =====>
+
+
+.navigate__counter {
+    @apply flex justify-center items-center absolute z-[3] top-[91%] -translate-y-[101%] left-[240rem];
+
+    @media screen and (max-width: 600px) {
+      @apply left-[180rem] top-[97%] -translate-y-[97%] flex-col;
+     }
+}
+
+.counter__all_items {
+    @apply text-[#CF4A47] text-[14rem] font-bold;
+}
+
+.counter__current_item {
+    @apply text-[#515151] text-[14rem] font-bold;
+}

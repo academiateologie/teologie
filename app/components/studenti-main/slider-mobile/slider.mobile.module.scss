@@ -1,0 +1,47 @@
+.publications__posts {
+    @apply hidden;
+
+    @media screen and (max-width: 600px) {
+     @apply block w-[100vw] mt-[30rem];   
+    }
+}
+.posts__gallery {
+    @apply w-full;
+}
+.publications__post__item {
+    @media screen and (max-width: 600px) {
+        @apply w-[370rem] h-[574rem] ml-[20rem];
+         box-shadow: 0rem 10rem 30rem 0rem rgba(0, 0, 0, 0.3);
+    }
+}
+.post__image {
+    @apply relative z-0 h-[422rem] w-full p-[4rem];
+}
+
+.item__description {
+    @apply py-[20rem] px-[16rem] flex flex-col h-[148rem];
+}
+.description__name {
+    @apply text-[20rem] text-[#66220f] font-bold leading-[33rem] text-center uppercase;
+}
+.description__text {
+    @apply text-[18rem] text-[#6f737e] font-normal leading-[30rem] text-center;
+}
+// ===== gallery navigate =====>
+
+
+.navigate__counter {
+    @apply flex justify-center items-center absolute z-[3] top-[101%] -translate-y-[101%] left-[240rem];
+
+    @media screen and (max-width: 600px) {
+      @apply left-[194rem] top-[96%];
+     }
+}
+
+.counter__all_items {
+    @apply text-[#CF4A47] text-[14rem] font-bold;
+}
+
+.counter__current_item {
+    @apply text-[#515151] text-[14rem] font-bold;
+}

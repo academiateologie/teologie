@@ -34,21 +34,21 @@
     @apply relative z-0;
 }
 .post__description {
-    @apply px-[26rem] pb-[28rem] h-[198rem];
+    @apply px-[26rem] pb-[28rem] h-[198rem] flex flex-col justify-between;
 
     @media screen and (max-width: 600px) {
         @apply p-[14rem] h-auto relative top-0 left-0 z-0;
     }
 }
 .post__slug {
-    @apply inline-block bg-[#F6DCDA] text-[#CF4A47] text-[12rem] font-bold uppercase py-[5rem] px-[8rem] mt-[23rem];
+    @apply inline-block w-fit bg-[#F6DCDA] text-[#CF4A47] text-[12rem] font-bold leading-none uppercase py-[5rem] px-[8rem] mt-[23rem];
 
     @media screen and (max-width: 600px) {
         @apply mt-0 text-[10rem];
     }
 }
 .post__text {
-    @apply text-[#272B37] text-[20rem] leading-[24rem] font-semibold mt-[16rem];
+    @apply text-[#272B37] text-[20rem] leading-[24rem] font-semibold mt-[10rem];
 
     display: -webkit-box; 
     -webkit-box-orient: vertical; 

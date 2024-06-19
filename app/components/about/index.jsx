@@ -1,12 +1,14 @@
+"use client"
 import React from "react";
 import Link from "next/link";
 import styles from "./about.module.scss"
+import ImageVisible from "./img-visible"
 
 const Index = () => {
   return (
     <section className={styles.about}>
       <div className={styles.about__wrapper}>
-        <div className={styles.about__image}></div>
+        <ImageVisible />
         <div className={styles.about__description}>
           <h6 className={styles.about__title}>Despre noi</h6>
           <p className={styles.about__text}>

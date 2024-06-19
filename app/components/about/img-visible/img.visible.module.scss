@@ -1,0 +1,8 @@
+.about__image {
+    @apply w-[603rem] h-[640rem] relative bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718278895/about-img_dmsotc_ejuqnb.webp')] bg-cover bg-center bg-no-repeat;
+
+    @media screen and (max-width: 600px) {
+        @apply w-0 h-0;
+    }
+
+}

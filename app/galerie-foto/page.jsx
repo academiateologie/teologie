@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from "../components/header-about"
-import Organizational from "../components/organizational/page";
 import Footer from "../components/footer"
 import PhotosMain from "../components/photos-main"
 
