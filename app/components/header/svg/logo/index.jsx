@@ -3,6 +3,8 @@ import React from 'react'
 const Index = () => {
   return (
     <svg
+      width="121"
+      height="67"
       className="w-[136rem] h-[75rem] tablet:h-[67rem] tablet:w-[121rem]"
       viewBox="0 0 121 67"
       fill="none"

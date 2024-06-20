@@ -44,18 +44,16 @@ const Index = () => {
                   src="https://res.cloudinary.com/dkkozauci/image/upload/v1718788200/home-posts/3-3_b0zfsi.webp"
                   width={276}
                   height={220}
-                  priority="true"
+                  className="w-full h-[220rem] object-cover"
                   quality={100}
-                  className={styles.video__item}
                   alt="post description"
                 />
                 <Image
                   src="https://res.cloudinary.com/dkkozauci/image/upload/v1718788200/home-posts/3-2_qwxb5g.webp"
                   width={276}
                   height={220}
-                  priority="true"
+                  className="w-full h-[220rem] object-cover"
                   quality={100}
-                  className={styles.video__item}
                   alt="post description"
                 />
               </div>
@@ -73,7 +71,7 @@ const Index = () => {
               </Link>
             </div>
             <div className={styles.video__inner}>
-              <iframe
+              {/* <iframe
                 src="https://res.cloudinary.com/dkkozauci/video/upload/v1717421063/fb-teologie-video_dr687s.mp4"
                 height="100%"
                 width="100%"
@@ -83,7 +81,7 @@ const Index = () => {
                   objectFit: "cover",
                 }}
                 allowFullScreen
-              ></iframe>
+              ></iframe> */}
             </div>
           </div>
         </div>
@@ -108,7 +106,7 @@ const Index = () => {
               Vezi toate
             </button>
           </div>
-          {isMobile && <VideoSliderMobile />}
+          {/* {isMobile && <VideoSliderMobile />} */}
 
           <Link
             href={"/galerie-video"}

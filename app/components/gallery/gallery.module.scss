@@ -1,6 +1,5 @@
 .gallery {
-    @apply w-full h-full bg-[url('../../../public/static/shared/pattern-mitropolia.png')] bg-cover bg-center;
-    // background: rgba(244 142 151 / 7%);
+    @apply w-full h-full bg-[url('../../../public/static/shared/pattern-mitropolia.webp')] bg-cover bg-center;
     @media screen and (max-width: 600px) {
         @apply pt-[16rem];
     }

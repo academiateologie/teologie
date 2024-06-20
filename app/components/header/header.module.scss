@@ -8,13 +8,12 @@
 }
 
 .header__wrapper {
-    @apply h-full w-full absolute top-0 left-0 z-[1] bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718354855/header-mobile_nleiwd.webp')] tablet:bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718261274/header-bg_qwhawq.webp')] bg-cover bg-no-repeat ;
+    @apply h-full w-full absolute top-0 left-0 z-[1] bg-[url('../../../public/static/header/header-bg_qwhawq_custom-med_xoftvj.webp')] bg-cover bg-no-repeat ;
 
-    .header__wrapper_dark {
-        @apply block absolute top-0 left-0 z-[2] h-full w-full bg-[#39363566]/40
+    &::after {
+        @apply block content-[''] absolute top-0 left-0 z-[2] h-full w-full bg-[#39363566]/40;
     }
     background-position-y: bottom;
-    background-position-x: right;
     @media screen and (max-width: 600px) {
         @apply overflow-hidden;
             background-position-x: 40%;
@@ -82,6 +81,23 @@
     }
 }
 
+.title__wrapper {
+    @apply absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-[3];
+
+    @media screen and (max-width: 600px) {
+        @apply w-full;
+    }
+}
+
+.title {
+        @apply text-center text-[52rem] text-[#fff] font-bold leading-[66rem] uppercase;
+
+        @media screen and (max-width: 600px) {
+        @apply text-[35rem] leading-[50rem] w-full;
+        text-shadow: 2rem 2rem 4rem 0 rgba(0, 0, 0, 0.8);
+    }
+}
+
 .bottom__items {
     @apply flex justify-center items-center gap-[25rem] w-full pb-[52rem] absolute bottom-0 z-[3];
 
@@ -101,10 +117,10 @@
         }
     }
     .item__icon {
-        @apply flex gap-[25rem] text-[17rem] font-semibold text-white;
+        @apply flex gap-[25rem] text-[17rem] font-semibold text-[#fff];
     }
     .item__text {
-        @apply flex gap-[25rem] text-[17rem] font-semibold text-white;
+        @apply flex gap-[25rem] text-[17rem] font-semibold text-[#fff];
 
         @media screen and (max-width: 600px) {
             @apply hidden;
@@ -115,17 +131,8 @@
         @apply hidden;
 
         @media screen and (max-width: 600px) {
-            @apply flex gap-[25rem] text-[15rem] font-normal text-white;
+            @apply flex gap-[25rem] text-[15rem] font-normal text-[#fff];
         }
-    }
-}
-
-.header__title {
-    @apply text-[52rem] text-white font-bold leading-[66rem] text-center absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-[3] uppercase;
-
-    @media screen and (max-width: 600px) {
-        @apply text-[35rem] leading-[50rem] w-full;
-        text-shadow: 2rem 2rem 4rem 0 rgba(0, 0, 0, 0.8);
     }
 }
 
@@ -148,7 +155,7 @@
     }
 }
 .subheader__image {
-    @apply w-[374rem] h-[225rem] bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718265387/subheader-img_qopdwj.png')] bg-cover bg-no-repeat;
+    @apply w-[374rem] h-[225rem] bg-[url('../../../public/static/header/subheader-img_qopdwj_o8msq5.webp')] bg-cover bg-no-repeat;
 
     @media screen and (max-width: 600px) {
         @apply w-[398rem] mt-[20rem];

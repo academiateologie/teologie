@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const Index = () => {
   return (
-    <motion.svg
+    <svg
       className="w-[156rem] tablet:w-[209rem] tablet:h-[236rem] absolute bottom-[-85%] tablet:bottom-[-40%] right-[0%] tablet:right-[-22%] z-[3]"
-      initial={{ opacity: 0, x: 100, y: 100 }}
-      animate={{ opacity: 1, x: 0, y: 0 }}
-      transition={{ duration: 2 }}
+      // initial={{ opacity: 0, x: 100, y: 100 }}
+      // animate={{ opacity: 1, x: 0, y: 0 }}
+      // transition={{ duration: 1 }}
       viewBox="0 0 229 194"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const Index = () => {
         fill="url(#pattern_117_27070)"
         fillOpacity="1.000000"
       />
-    </motion.svg>
+    </svg>
   );
 };
 

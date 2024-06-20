@@ -3,7 +3,7 @@ import React from 'react'
 import styles from "./desktop.public.module.scss"
 import { motion } from 'framer-motion';
 import { useMediaQuery } from "react-responsive";
-
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Navigation,
@@ -40,7 +40,7 @@ const Index = ({ home__posts }) => {
       className={styles.publications__posts}
       initial={{ opacity: 0 }}
       animate={{ opacity: home__posts.length > 0 ? 1 : 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
     >
       <div className={styles.posts__gallery}>
         <Swiper
@@ -85,11 +85,14 @@ const Index = ({ home__posts }) => {
                   {isHover && onButton === post.id && (
                     <span className={styles.on__hover_blur}></span>
                   )}
-                  <img
+                  <Image
                     src={post.post_img}
-                    className="w-full h-[256rem]"
-                    alt={post.description}
-                  ></img>
+                    className="w-full h-[256rem] object-cover"
+                    width={370}
+                    height={256}
+                    alt={`${post.description}`}
+                    quality={100}
+                  />
                   <div className={styles.post__description}>
                     <span className={styles.post__slug}>{post.slug_text}</span>
                     <span className={styles.post__text}>{post.text_title}</span>

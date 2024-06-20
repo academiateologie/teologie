@@ -213,14 +213,14 @@ const Index = () => {
       )}
 
       <header className={styles.header}>
-        <div className={styles.header__wrapper}>
-          <div
-            className={styles.header__wrapper_dark}
-            onClick={() => {
-              setSelectorActive(!selectorActive);
-              setIsItemActive(null);
-            }}
-          />
+        <div
+          className={styles.header__wrapper}
+          onClick={() => {
+            setSelectorActive(!selectorActive);
+            setIsItemActive(null);
+          }}
+        >
+          <div className={styles.header__wrapper_dark} />
           <div
             className={styles.header__top_gradient}
             onClick={() => {
@@ -229,6 +229,7 @@ const Index = () => {
             }}
           />
           <span className={styles.header__bottom_gradient}></span>
+
           <div className={styles.header__top}>
             <Link href="/">
               <HeaderGerb />
@@ -292,18 +293,18 @@ const Index = () => {
             </button>
           </div>
 
-          <h1
-            className={styles.header__title}
-          >
+          <div className={styles.title__wrapper}>
             <BirdTop />
             <TopLineDecor />
-            Academia <br />
-            de teologie ortodoxă <br />
-            din Moldova
+            <h1 className={styles.title}>
+              Academia <br />
+              de teologie ortodoxă <br />
+              din Moldova
+            </h1>
             <BottomLineDecor />
             <BirdLeft />
             <BirdRight />
-          </h1>
+          </div>
 
           <div className={styles.header__bottom}>
             <div className={styles.bottom__items}>

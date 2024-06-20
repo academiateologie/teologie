@@ -7,7 +7,8 @@
     }
 }
 .header__wrapper {
-    @apply h-full w-full absolute top-0 left-0 z-[1] bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718261649/header-mobile_yzdfii.webp')] tablet:bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718261274/header-bg_qwhawq.webp')] bg-cover tablet:bg-center bg-no-repeat after:content-[''] after:block after:absolute after:top-0 after:left-0 after:z-[2] after:h-full after:w-full after:bg-[#39363566]/40;
+    @apply h-full w-full absolute top-0 left-0 z-[1] bg-[url('https://res.cloudinary.com/dkkozauci/image/upload/v1718872013/header-bg_qwhawq_custom-med_xoftvj.webp')] bg-cover bg-no-repeat after:content-[''] after:block after:absolute after:top-0 after:left-0 after:z-[2] after:h-full after:w-full after:bg-[#39363566]/40;
+    background-position-y: 67%;
 
     @media screen and (max-width: 600px) {
         @apply overflow-hidden;
