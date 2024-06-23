@@ -9,6 +9,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --pseudo-counter: "0"
 }
 
 * {
@@ -159,6 +160,13 @@ body {
 
     &::before {
       @apply content-['0'] inline-flex text-[14rem] text-[#cf4a47] font-semibold;
+
+    }
+  }
+  .swiper-pagination-current.content-none {
+    @apply text-[#cf4a47];
+    &::before {
+      @apply content-[''] inline-flex text-[14rem] text-[#cf4a47] font-semibold;
     }
   }
 }
@@ -358,7 +366,6 @@ body {
 
       @media screen and (max-width: 600px) {
         @apply top-[600rem];
-        // touch-action: none;
       }
 
     &::after {
@@ -401,6 +408,12 @@ body {
 
     &::before {
       @apply content-['0'] inline-flex text-[21rem] text-[#cf4a47] font-semibold;
+    }
+  }
+   .swiper-pagination-current.content-none {
+    @apply text-[#cf4a47];
+    &::before {
+      @apply content-[''] inline-flex text-[14rem] text-[#cf4a47] font-semibold;
     }
   }
   .swiper-pagination-current.active {

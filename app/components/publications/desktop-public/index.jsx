@@ -10,6 +10,7 @@ import {
   Pagination,
   Scrollbar,
 } from "swiper/modules";
+import { CldImage } from "next-cloudinary";
 
 const Index = ({ home__posts }) => {
   const isDesktop = useMediaQuery({
@@ -85,7 +86,7 @@ const Index = ({ home__posts }) => {
                   {isHover && onButton === post.id && (
                     <span className={styles.on__hover_blur}></span>
                   )}
-                  <Image
+                  <CldImage
                     src={post.post_img}
                     className="w-full h-[256rem] object-cover"
                     width={370}

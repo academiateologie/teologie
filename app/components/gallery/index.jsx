@@ -7,6 +7,7 @@ import SliderMobile from "./foto-gallery/SliderMobile";
 import VideoSliderMobile from "./foto-video/SliderMobile";
 import { useMediaQuery } from "react-responsive";
 import dynamic from "next/dynamic";
+import { CldImage } from "next-cloudinary";
 
 const SliderComponent = dynamic(() => import("./foto-gallery/SliderMobile"), {
   ssr: true,
@@ -40,7 +41,7 @@ const Index = () => {
             </div>
             {isMobile && (
               <div className={styles.foto__inner}>
-                <Image
+                <CldImage
                   src="https://res.cloudinary.com/dkkozauci/image/upload/v1718788200/home-posts/3-3_b0zfsi.webp"
                   width={276}
                   height={220}
@@ -48,7 +49,7 @@ const Index = () => {
                   quality={100}
                   alt="post description"
                 />
-                <Image
+                <CldImage
                   src="https://res.cloudinary.com/dkkozauci/image/upload/v1718788200/home-posts/3-2_qwxb5g.webp"
                   width={276}
                   height={220}
