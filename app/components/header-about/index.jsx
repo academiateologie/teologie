@@ -43,7 +43,7 @@ const headerTopItems = [
   {
     id: 5,
     itemName: "Admiterea 2023-2024",
-    itemLink: "/",
+    itemLink: "/admitere",
     itemSelector: "",
     submenuItems: [],
   },
@@ -291,6 +291,9 @@ const Index = () => {
 
             {isHeader === "/galerie-video" && (
               <h1 className={styles.header__title}>galerie video</h1>
+            )}
+            {isHeader === "/admitere" && (
+              <h1 className={styles.header__title}>admitere</h1>
             )}
           </div>
         </div>
