@@ -24,7 +24,7 @@ const headerTopItems = [
     itemName: "Facultate",
     itemLink: "",
     itemSelector: <ItemSelector />,
-    submenuItems: [{ id: 21, submenuItem: "Corp Didactic ATOM" }],
+    submenuItems: [{ id: 21, submenuItem: "Corp Didactic ATOM", submenuLink: "/corp-didactic" }],
   },
   {
     id: 3,
@@ -293,7 +293,10 @@ const Index = () => {
               <h1 className={styles.header__title}>galerie video</h1>
             )}
             {isHeader === "/admitere" && (
-              <h1 className={styles.header__title}>admitere</h1>
+              <h1 className={styles.header__title}>admitere 2023-2024</h1>
+            )}
+            {isHeader === "/corp-didactic" && (
+              <h1 className={styles.header__title}>corp didactic atom</h1>
             )}
           </div>
         </div>
