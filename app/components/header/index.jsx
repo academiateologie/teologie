@@ -34,7 +34,7 @@ const headerTopItems = [
   {
     id: 3,
     itemName: "Seminarul",
-    itemLink: "/",
+    itemLink: "/seminarul",
     itemSelector: "",
     submenuItems: [],
   },
@@ -237,7 +237,7 @@ const Index = () => {
 
             <ul className={styles.top__items}>
               {headerTopItems.map((item, idx) => (
-                <Link key={idx} href={`/${item.itemLink}`} className="relative">
+                <Link key={idx} href={`${item.itemLink}`} className="relative">
                   <motion.li
                     className={styles.top__item}
                     onHoverStart={() => {
