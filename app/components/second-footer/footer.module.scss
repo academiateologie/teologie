@@ -1,0 +1,90 @@
+.footer {
+    @apply w-full h-full bg-[#66220F] py-[33rem];
+
+    @media screen and (max-width: 600px) {
+        @apply py-0;
+    }
+}
+
+.footer__inner {
+    @apply flex justify-center gap-[72rem];
+
+    @media screen and (max-width: 600px) {
+        @apply flex-col-reverse gap-[20rem];
+    }
+}
+
+.footer__left {
+    @apply block relative top-0 left-0 z-0;
+
+    @media screen and (max-width: 600px) {
+        @apply hidden;
+    }
+
+
+}
+
+.footer__left_mob {
+    @apply hidden;
+
+    @media screen and (max-width: 600px) {
+        @apply flex;
+    }
+
+    .email__text,
+    .phone__text {
+        @media screen and (max-width: 600px) {
+            @apply hidden;
+        }
+    }
+
+    .footer__left_location {
+        @media screen and (max-width: 600px) {
+            @apply ml-[30rem];
+        }
+    }
+}
+
+.footer__left_email {
+    @apply mt-[33rem];
+
+    @media screen and (max-width: 600px) {
+        @apply mt-0;
+    }
+}
+
+.footer__left_email,
+.footer__left_phone,
+.footer__left_location {
+    @apply flex items-center gap-[10rem] mb-[17rem];
+}
+
+.email__icon {}
+
+.email__text,
+.phone__text,
+.location__text {
+    @apply text-white text-[17rem];
+}
+
+.footer__left_phone {}
+
+.phone__icon {}
+
+.phone__text {}
+
+.footer__left_location {}
+
+.location__icon {}
+
+.location__text {}
+
+.footer__right {}
+
+.footer__right_map {
+    @apply w-[737rem] h-[168rem] bg-[url('../../../public/static/location/location-map.png')] bg-cover bg-center bg-no-repeat;
+
+    @media screen and (max-width: 600px) {
+        @apply w-full;
+    }
+}
