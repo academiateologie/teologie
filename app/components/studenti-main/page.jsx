@@ -22,7 +22,7 @@ function Page() {
             />
           </div>
           <h6 className={styles.studenti__top_title}>
-             În această rubrică, vom publica toată informaţia necesară pentru
+             Înn această rubrică, vom publica toată informaţia necesară pentru
             studenţi, cum ar fi orarul sunetelor, orarul lecţiilor şi alte date
             care-i vizează nemijlocit pe aceştia.
           </h6>
