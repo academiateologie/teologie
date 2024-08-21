@@ -5,7 +5,7 @@ import PhoneIcon from "./svg/phone-icon";
 import CompaseIcon from "./svg/compase-icon";
 import EmailIcon from "./svg/email-icon";
 import HeaderLogo from "./svg/logo";
-import FBIcon from './svg/fb-icon'
+import FBIcon from "./svg/fb-icon";
 import ItemSelector from "./svg/item-selector-white";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -24,12 +24,18 @@ const headerTopItems = [
     itemName: "Facultate",
     itemLink: "",
     itemSelector: <ItemSelector />,
-    submenuItems: [{ id: 21, submenuItem: "Corp Didactic ATOM", submenuLink: "/corp-didactic" }],
+    submenuItems: [
+      {
+        id: 21,
+        submenuItem: "Corp Didactic ATOM",
+        submenuLink: "/corp-didactic",
+      },
+    ],
   },
   {
     id: 3,
     itemName: "Seminarul",
-    itemLink: "/",
+    itemLink: "/seminarul",
     itemSelector: "",
     submenuItems: [],
   },
@@ -69,7 +75,6 @@ const headerTopItems = [
 ];
 
 const Index = () => {
-
   const isDesktop = useMediaQuery({
     query: "(min-width: 600px)",
   });
@@ -80,7 +85,7 @@ const Index = () => {
   const [isItemActive, setIsItemActive] = React.useState(null);
   const [isSubmenuMobileActive, setIsSubmenuMobileActive] =
     React.useState(false);
-    const [isOpenSubmenuMobile, setIsOpenSubmenuMobile] = React.useState(null);
+  const [isOpenSubmenuMobile, setIsOpenSubmenuMobile] = React.useState(null);
 
   React.useEffect(() => {
     if (isMenuOpen) {
@@ -211,7 +216,7 @@ const Index = () => {
                 {headerTopItems.map((item, idx) => (
                   <Link
                     key={idx}
-                    href={`/${item.itemLink === "" ? "" : item.itemLink}`}
+                    href={`${item.itemLink === "" ? "" : item.itemLink}`}
                     className="relative"
                   >
                     <motion.li
