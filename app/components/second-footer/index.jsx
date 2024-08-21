@@ -17,7 +17,6 @@ const Index = () => {
         }}
       >
         <article>
-          <FBIcon />
           <div className={styles.footer__left_email}>
             <EmailIcon />
             <p className={styles.email__text}> teologie.ortodoxa@gmail.com</p>

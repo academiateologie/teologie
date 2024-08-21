@@ -29,7 +29,13 @@ const headerTopItems = [
     itemName: "Facultate",
     itemLink: "/corp-didactic",
     itemSelector: <ItemSelector />,
-    submenuItems: [{ id: 21, submenuItem: "Corp Didactic ATOM", submenuLink: "/corp-didactic" }],
+    submenuItems: [
+      {
+        id: 21,
+        submenuItem: "Corp Didactic ATOM",
+        submenuLink: "/corp-didactic",
+      },
+    ],
   },
   {
     id: 3,
@@ -41,7 +47,7 @@ const headerTopItems = [
   {
     id: 4,
     itemName: "Studenţi",
-    itemLink: "/",
+    itemLink: "/studenti",
     itemSelector: "",
     submenuItems: [],
   },
