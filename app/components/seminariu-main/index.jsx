@@ -131,13 +131,13 @@ function Page() {
               Moldove şi ale consiliului de administraţie a STO.
             </p>
             <p style={{ color: "#272B37", fontSize: 18 }}>
-              <bold style={{ fontWeight: 20 }}>STO</bold> este Instituţia de
-              învăţămînt secundar general care asigură elevilor o pregătire de
-              cultură generală şi teologică de bază, necesară pentru continuarea
-              studiilor în învăţămîntul superior, la specialităţile umanistice
-              şi cele teologice. Învăţămîntul liceal se organizează ca
-              învăţămînt de zi, durata învăţămîntului este de 3 ani (clasele
-              X-XII)
+              <span style={{ fontWeight: 20, color: "black" }}>STO</span> este
+              Instituţia de învăţămînt secundar general care asigură elevilor o
+              pregătire de cultură generală şi teologică de bază, necesară
+              pentru continuarea studiilor în învăţămîntul superior, la
+              specialităţile umanistice şi cele teologice. Învăţămîntul liceal
+              se organizează ca învăţămînt de zi, durata învăţămîntului este de
+              3 ani (clasele X-XII)
             </p>
             <p style={{ color: "#272B37", fontSize: 18 }}>
               Studiile se desfăşoară în limba română.
