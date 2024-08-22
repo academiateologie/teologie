@@ -33,7 +33,7 @@ const headerTopItems = [
       {
         id: 21,
         submenuItem: "Corp Didactic ATOM",
-        itemLink: "/corp-didactic",
+        submenuLink: "/corp-didactic",
       },
     ],
   },
@@ -61,13 +61,13 @@ const headerTopItems = [
   {
     id: 6,
     itemName: "Panou Informativ",
-    itemLink: "/",
+    itemLink: "",
     itemSelector: <ItemSelector />,
     submenuItems: [
-      { id: 61, submenuItem: "Pentru Studenţi", itemLink: "/pentru-studenti" },
-      { id: 62, submenuItem: "Pentru Profesori", itemLink: "/" },
-      { id: 63, submenuItem: "MASTERAT", itemLink: "/" },
-      { id: 64, submenuItem: "Licenţa", itemLink: "/" },
+      { id: 61, submenuItem: "Pentru Studenţi" },
+      { id: 62, submenuItem: "Pentru Profesori" },
+      { id: 63, submenuItem: "MASTERAT" },
+      { id: 64, submenuItem: "Licenţa" },
     ],
   },
   {
@@ -183,17 +183,16 @@ const Index = () => {
                     }}
                   >
                     {item.submenuItems.map((si, idx) => (
-                      <Link key={idx} href={si.itemLink}>
-                        <motion.span
-                          className="flex justify-end text-[18rem] text-[#272b37] w-full py-[11rem] transition-all duration-150"
-                          initial={{ right: 300 }}
-                          animate={{
-                            right: 0,
-                          }}
-                        >
-                          {si.submenuItem}
-                        </motion.span>
-                      </Link>
+                      <motion.span
+                        key={idx}
+                        className="flex justify-end text-[18rem] text-[#272b37] w-full py-[11rem] transition-all duration-150"
+                        initial={{ right: 300 }}
+                        animate={{
+                          right: 0,
+                        }}
+                      >
+                        {si.submenuItem}
+                      </motion.span>
                     ))}
                   </motion.span>
                 )}
@@ -271,14 +270,15 @@ const Index = () => {
                       }}
                     >
                       {item.submenuItems.map((it) => (
-                        <Link key={it.id} href={it.itemLink}>
-                          <li className="text-[10rem] pl-[11rem] w-[100%] hover:cursor-pointer py-[11rem] relative hover:bg-[#2E2914]">
-                            {isDesktop && it.id !== 61 && it.id !== 21 && (
-                              <span className={styles.separate__line}></span>
-                            )}
-                            {it.submenuItem}
-                          </li>
-                        </Link>
+                        <li
+                          key={it.id}
+                          className="text-[10rem] pl-[11rem] w-[100%] hover:cursor-pointer py-[11rem] relative hover:bg-[#2E2914]"
+                        >
+                          {isDesktop && it.id !== 61 && it.id !== 21 && (
+                            <span className={styles.separate__line}></span>
+                          )}
+                          {it.submenuItem}
+                        </li>
                       ))}
                     </span>
                   )}
@@ -315,7 +315,7 @@ const Index = () => {
           <div className={styles.header__bottom}>
             <div className={styles.bottom__items}>
               {headerBottomItems.map((item) => (
-                <Link
+                <a
                   key={item.id}
                   href={item.itemLink}
                   className={styles.bottom__item}
@@ -325,7 +325,7 @@ const Index = () => {
                   <span className={styles.item__text_mob}>
                     {item.itemNameMob}
                   </span>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
